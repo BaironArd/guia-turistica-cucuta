@@ -75,8 +75,49 @@ const places = [
     image: "assets/images/malecon.jpg",
     imageAlt: "Zona de parque en el Malecón de Cúcuta",
     mapQuery: "Malecón, Cúcuta, Colombia"
+  },
+  {
+    id: "plaza-banderas",
+    name: "Plaza de Banderas",
+    category: "ocio",
+    categoryLabel: "Ocio y recreación",
+    location: "Cúcuta",
+    description: "Espacio cívico abierto para hacer una pausa y recorrer el entorno urbano. Consulta su ubicación en el mapa antes de tu visita.",
+    image: "assets/images/parque-santander.jpg",
+    imageAlt: "Espacio público urbano en Cúcuta",
+    mapQuery: "Plaza de Banderas, Cúcuta, Colombia"
+  },
+  {
+    id: "ventura-plaza",
+    name: "Ventura Plaza",
+    category: "comercio",
+    categoryLabel: "Comercio",
+    location: "Cúcuta",
+    description: "Centro comercial de la ciudad con una oferta de tiendas y servicios. Comprueba horarios, eventos y servicios directamente con el establecimiento.",
+    image: "assets/images/ventura-plaza.jpg",
+    imageAlt: "Fachada del centro comercial Ventura Plaza en Cúcuta",
+    mapQuery: "Ventura Plaza, Cúcuta, Colombia"
   }
 ];
+
+const categoryNames = {
+  todos: "todos los lugares",
+  historico: "lugares históricos y culturales",
+  naturaleza: "lugares de naturaleza",
+  ocio: "lugares de ocio y recreación",
+  comercio: "lugares de comercio"
+};
+
+const grid = document.querySelector("#destination-grid");
+const searchInput = document.querySelector("#destination-search");
+const status = document.querySelector("#result-status");
+const emptyState = document.querySelector("#empty-state");
+const filterButtons = [...document.querySelectorAll("[data-filter]")];
+const dialog = document.querySelector("#place-dialog");
+const menuToggle = document.querySelector(".menu-toggle");
+const primaryNav = document.querySelector("#primary-nav");
+let selectedCategory = "todos";
+let lastDialogTrigger = null;
 
 function mapUrl(query) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
@@ -102,35 +143,108 @@ function renderPlace(place) {
 }
 
 function updatePlaces() {
-  const grid = document.querySelector("#destination-grid");
-  grid.innerHTML = places.map(renderPlace).join("");
-  document.querySelector("#result-status").textContent = `${places.length} lugares para explorar.`;
-  document.querySelector("#place-total").textContent = places.length;
-  document.querySelector("#current-year").textContent = new Date().getFullYear();
-  document.querySelectorAll("[data-count]").forEach((count) => {
-    const category = count.dataset.count;
-    count.textContent = category === "todos"
-      ? places.length
-      : places.filter((place) => place.category === category).length;
+  const query = searchInput.value.trim().toLocaleLowerCase("es");
+  const visiblePlaces = places.filter((place) => {
+    const matchesCategory = selectedCategory === "todos" || place.category === selectedCategory;
+    const searchableText = `${place.name} ${place.categoryLabel} ${place.location}`.toLocaleLowerCase("es");
+    return matchesCategory && searchableText.includes(query);
+  });
+
+  grid.innerHTML = visiblePlaces.map(renderPlace).join("");
+  emptyState.hidden = visiblePlaces.length > 0;
+  status.textContent = `${visiblePlaces.length} ${categoryNames[selectedCategory]}${query ? ` para “${searchInput.value.trim()}”` : ""}.`;
+
+  grid.querySelectorAll(".card-image").forEach((image) => {
+    image.addEventListener("error", () => {
+      const fallback = document.createElement("div");
+      fallback.className = "image-fallback";
+      fallback.textContent = "Imagen no disponible";
+      fallback.setAttribute("role", "img");
+      fallback.setAttribute("aria-label", "Imagen no disponible");
+      image.replaceWith(fallback);
+    }, { once: true });
   });
   grid.querySelectorAll("[data-place-id]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const place = places.find((candidate) => candidate.id === button.dataset.placeId);
-      if (!place) return;
-
-      document.querySelector("#dialog-image").src = place.image;
-      document.querySelector("#dialog-image").alt = place.imageAlt;
-      document.querySelector("#dialog-category").textContent = `${place.categoryLabel} · ${place.location}`;
-      document.querySelector("#dialog-title").textContent = place.name;
-      document.querySelector("#dialog-description").textContent = place.description;
-      document.querySelector("#dialog-map-link").href = mapUrl(place.mapQuery);
-      document.querySelector("#place-dialog").showModal();
-    });
+    button.addEventListener("click", () => openPlaceDialog(button.dataset.placeId, button));
   });
 }
 
-document.querySelector(".dialog-close").addEventListener("click", () => {
-  document.querySelector("#place-dialog").close();
-});
+function selectCategory(category) {
+  selectedCategory = category;
+  filterButtons.forEach((button) => {
+    const selected = button.dataset.filter === category;
+    button.classList.toggle("is-selected", selected);
+    button.setAttribute("aria-pressed", String(selected));
+  });
+  updatePlaces();
+}
 
+function openPlaceDialog(id, trigger) {
+  const place = places.find((candidate) => candidate.id === id);
+  if (!place) return;
+
+  lastDialogTrigger = trigger;
+  document.querySelector("#dialog-image").src = place.image;
+  document.querySelector("#dialog-image").alt = place.imageAlt;
+  document.querySelector("#dialog-category").textContent = `${place.categoryLabel} · ${place.location}`;
+  document.querySelector("#dialog-title").textContent = place.name;
+  document.querySelector("#dialog-description").textContent = place.description;
+  document.querySelector("#dialog-map-link").href = mapUrl(place.mapQuery);
+  dialog.showModal();
+  dialog.querySelector(".dialog-close").focus();
+}
+
+function closeMenu() {
+  menuToggle.setAttribute("aria-expanded", "false");
+  primaryNav.classList.remove("is-open");
+}
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => selectCategory(button.dataset.filter));
+});
+searchInput.addEventListener("input", updatePlaces);
+document.querySelectorAll("[data-category-link]").forEach((link) => {
+  link.addEventListener("click", () => selectCategory(link.dataset.categoryLink));
+});
+menuToggle.addEventListener("click", () => {
+  const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!expanded));
+  primaryNav.classList.toggle("is-open", !expanded);
+});
+primaryNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") closeMenu();
+  if (event.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
+    event.preventDefault();
+    searchInput.focus();
+  }
+});
+dialog.querySelector(".dialog-close").addEventListener("click", () => dialog.close());
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) dialog.close();
+});
+dialog.addEventListener("close", () => lastDialogTrigger?.focus());
+
+const sectionLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
+if ("IntersectionObserver" in window) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      sectionLinks.forEach((link) => {
+        const active = link.hash === `#${entry.target.id}`;
+        if (active) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+        link.classList.toggle("is-active", active);
+      });
+    });
+  }, { rootMargin: "-25% 0px -65% 0px" });
+  document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
+}
+
+document.querySelector("#current-year").textContent = new Date().getFullYear();
+document.querySelector("#place-total").textContent = places.length;
+document.querySelectorAll("[data-count]").forEach((count) => {
+  const category = count.dataset.count;
+  count.textContent = category === "todos" ? places.length : places.filter((place) => place.category === category).length;
+});
 updatePlaces();
