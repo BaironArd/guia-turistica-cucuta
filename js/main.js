@@ -83,8 +83,8 @@ const places = [
     categoryLabel: "Ocio y recreación",
     location: "Cúcuta",
     description: "Espacio cívico abierto para hacer una pausa y recorrer el entorno urbano. Consulta su ubicación en el mapa antes de tu visita.",
-    image: "assets/images/parque-santander.jpg",
-    imageAlt: "Espacio público urbano en Cúcuta",
+    image: null,
+    imageAlt: "",
     mapQuery: "Plaza de Banderas, Cúcuta, Colombia"
   },
   {
@@ -122,10 +122,13 @@ const status = document.querySelector("#result-status");
 const emptyState = document.querySelector("#empty-state");
 const filterButtons = [...document.querySelectorAll("[data-filter]")];
 const dialog = document.querySelector("#place-dialog");
+const dialogImage = document.querySelector("#dialog-image");
+const dialogImageFallback = document.querySelector("#dialog-image-fallback");
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNav = document.querySelector("#primary-nav");
 let selectedCategory = "todos";
 let lastDialogTrigger = null;
+let failedDialogImage = null;
 
 function mapUrl(query) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
@@ -136,10 +139,14 @@ function normalizeText(value) {
 }
 
 function renderPlace(place) {
+  const imageMarkup = place.image
+    ? `<img class="card-image" src="${place.image}" alt="${place.imageAlt}" width="1000" height="640" loading="lazy">`
+    : `<div class="image-fallback" role="img" aria-label="Fotografía de ${place.name} pendiente de verificación">Fotografía pendiente de verificación</div>`;
+
   return `
     <article class="destination-card">
       <div class="card-image-wrap">
-        <img class="card-image" src="${place.image}" alt="${place.imageAlt}" width="1000" height="640" loading="lazy">
+        ${imageMarkup}
         <span class="card-category">${place.categoryLabel}</span>
       </div>
       <div class="card-content">
@@ -171,9 +178,9 @@ function updatePlaces() {
     image.addEventListener("error", () => {
       const fallback = document.createElement("div");
       fallback.className = "image-fallback";
-      fallback.textContent = "Imagen no disponible";
+      fallback.textContent = "Fotografía no disponible";
       fallback.setAttribute("role", "img");
-      fallback.setAttribute("aria-label", "Imagen no disponible");
+      fallback.setAttribute("aria-label", `Fotografía de ${image.alt} no disponible`);
       image.replaceWith(fallback);
     }, { once: true });
   });
@@ -197,8 +204,25 @@ function openPlaceDialog(id, trigger) {
   if (!place) return;
 
   lastDialogTrigger = trigger;
-  document.querySelector("#dialog-image").src = place.image;
-  document.querySelector("#dialog-image").alt = place.imageAlt;
+  const showDialogImage = place.image && failedDialogImage !== place.image;
+  dialogImage.hidden = !showDialogImage;
+  dialogImageFallback.hidden = Boolean(showDialogImage);
+  dialogImage.onerror = showDialogImage
+    ? () => {
+        failedDialogImage = place.image;
+        if (dialogImage.getAttribute("src") === place.image) {
+          dialogImage.hidden = true;
+          dialogImageFallback.hidden = false;
+        }
+      }
+    : null;
+  if (showDialogImage) {
+    dialogImage.alt = place.imageAlt;
+    dialogImage.src = place.image;
+  } else {
+    dialogImage.removeAttribute("src");
+    dialogImage.alt = "";
+  }
   document.querySelector("#dialog-category").textContent = `${place.categoryLabel} · ${place.location}`;
   document.querySelector("#dialog-title").textContent = place.name;
   document.querySelector("#dialog-description").textContent = place.description;
@@ -217,7 +241,10 @@ filterButtons.forEach((button) => {
 });
 searchInput.addEventListener("input", updatePlaces);
 document.querySelectorAll("[data-category-link]").forEach((link) => {
-  link.addEventListener("click", () => selectCategory(link.dataset.categoryLink));
+  link.addEventListener("click", () => {
+    searchInput.value = "";
+    selectCategory(link.dataset.categoryLink);
+  });
 });
 menuToggle.addEventListener("click", () => {
   const expanded = menuToggle.getAttribute("aria-expanded") === "true";
@@ -226,6 +253,11 @@ menuToggle.addEventListener("click", () => {
 });
 primaryNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && dialog.open) {
+    event.preventDefault();
+    dialog.close();
+    return;
+  }
   if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") closeMenu();
   if (event.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
     event.preventDefault();
