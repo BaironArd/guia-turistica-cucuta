@@ -108,6 +108,14 @@ const categoryNames = {
   comercio: "lugares de comercio"
 };
 
+const singularCategoryNames = {
+  todos: "lugar",
+  historico: "lugar histórico y cultural",
+  naturaleza: "lugar de naturaleza",
+  ocio: "lugar de ocio y recreación",
+  comercio: "lugar de comercio"
+};
+
 const grid = document.querySelector("#destination-grid");
 const searchInput = document.querySelector("#destination-search");
 const status = document.querySelector("#result-status");
@@ -121,6 +129,10 @@ let lastDialogTrigger = null;
 
 function mapUrl(query) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
+function normalizeText(value) {
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es");
 }
 
 function renderPlace(place) {
@@ -143,16 +155,17 @@ function renderPlace(place) {
 }
 
 function updatePlaces() {
-  const query = searchInput.value.trim().toLocaleLowerCase("es");
+  const query = normalizeText(searchInput.value.trim());
   const visiblePlaces = places.filter((place) => {
     const matchesCategory = selectedCategory === "todos" || place.category === selectedCategory;
-    const searchableText = `${place.name} ${place.categoryLabel} ${place.location}`.toLocaleLowerCase("es");
+    const searchableText = normalizeText(`${place.name} ${place.categoryLabel} ${place.location}`);
     return matchesCategory && searchableText.includes(query);
   });
 
   grid.innerHTML = visiblePlaces.map(renderPlace).join("");
   emptyState.hidden = visiblePlaces.length > 0;
-  status.textContent = `${visiblePlaces.length} ${categoryNames[selectedCategory]}${query ? ` para “${searchInput.value.trim()}”` : ""}.`;
+  const resultCategory = visiblePlaces.length === 1 ? singularCategoryNames[selectedCategory] : categoryNames[selectedCategory];
+  status.textContent = `${visiblePlaces.length} ${resultCategory}${query ? ` para “${searchInput.value.trim()}”` : ""}.`;
 
   grid.querySelectorAll(".card-image").forEach((image) => {
     image.addEventListener("error", () => {
