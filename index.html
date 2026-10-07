@@ -25,6 +25,7 @@
           <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
         </button>
         <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
           <a href="#rutas">Rutas</a>
           <a href="#destinos" data-category-link="naturaleza">Naturaleza</a>
           <a href="#destinos" data-category-link="ocio">Ocio y comercio</a>
@@ -98,7 +99,7 @@
               <button class="filter-button" type="button" data-filter="comercio" aria-pressed="false">Comercio <span data-count="comercio"></span></button>
             </div>
             <label class="search-box">
-              <span class="sr-only">Buscar un lugar por nombre</span>
+              <span class="sr-only">Buscar por lugar, categoría o ubicación</span>
               <span class="search-icon" aria-hidden="true">⌕</span>
               <input id="destination-search" type="search" placeholder="Buscar un lugar…" autocomplete="off">
               <kbd aria-hidden="true">/</kbd>
@@ -107,6 +108,7 @@
           <p class="result-status" id="result-status" aria-live="polite"></p>
           <div class="destination-grid" id="destination-grid"></div>
           <p class="empty-state" id="empty-state" hidden>No encontramos lugares con esos criterios. Prueba con otra búsqueda o categoría.</p>
+          <noscript><p class="empty-state">Activa JavaScript en tu navegador para explorar y filtrar los destinos de esta guía.</p></noscript>
         </div>
       </section>
 
@@ -141,7 +143,7 @@
           </div>
           <div class="about-stats" aria-label="Alcance de la guía">
             <div><strong id="place-total">—</strong><span>lugares para explorar</span></div>
-            <div><strong>4</strong><span>formas de recorrer</span></div>
+            <div><strong>4</strong><span>categorías de lugares</span></div>
             <div><strong>1</strong><span>ciudad por descubrir</span></div>
           </div>
         </div>
