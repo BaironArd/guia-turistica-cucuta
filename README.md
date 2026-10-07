@@ -6,6 +6,7 @@ Guía web informativa e independiente para explorar lugares históricos, cultura
 
 - Navegación por secciones con menú adaptable a pantallas pequeñas.
 - Rutas temáticas y tarjetas de destinos con detalles ampliados.
+- Catálogo de 20 lugares de Cúcuta distribuidos en cuatro categorías.
 - Filtros por categoría y búsqueda por nombre, categoría o ubicación.
 - Enlaces de búsqueda de lugares en Google Maps.
 - Fotografías locales con créditos y licencias registrados en [`docs/fuentes-imagenes.md`](docs/fuentes-imagenes.md).

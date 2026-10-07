@@ -15,3 +15,23 @@ Las fotografías de este proyecto se descargaron de Wikimedia Commons el 16 de o
 | `cristo-rey.jpg` | [Cristo Rey, Cúcuta NS.jpg](https://commons.wikimedia.org/wiki/File:Cristo_Rey,_C%C3%BAcuta_NS.jpg) | EEIM | CC BY-SA 3.0 |
 
 Las licencias Creative Commons con atribución y compartir igual requieren conservar la atribución y respetar sus condiciones al redistribuir o adaptar las imágenes. Consulta la ficha original para el texto legal completo y cualquier actualización de metadatos.
+
+## Referencias consultadas para ampliar el catálogo
+
+Las fichas siguientes se consultaron para identificar lugares y comprobar que Commons contiene material relacionado con esos sitios. **Estas fotografías nuevas no están incorporadas en `assets/images/` ni se muestran en las tarjetas nuevas**; se conserva un recuadro que indica que no hay fotografía local disponible. No reutilizar las imágenes de esta lista antes de descargar una copia, comprobar nuevamente la ficha y documentar la atribución/licencia en la tabla principal.
+
+| Lugar incorporado | Ficha consultada | Autor indicado | Licencia indicada |
+| --- | --- | --- | --- |
+| Parque Colón (Parque La Victoria) | [Parque Colón Cúcuta NS, Colombia.jpg](https://commons.wikimedia.org/wiki/File:Parque_Col%C3%B3n_C%C3%BAcuta_NS,_Colombia.jpg) | EEIM | CC BY-SA 4.0 |
+| Parque Mercedes Ábrego | [Parque Mercedes Abrego, Cúcuta.JPG](https://commons.wikimedia.org/wiki/File:Parque_Mercedes_Abrego,_C%C3%BAcuta.JPG) | EEIM | CC BY-SA 4.0 |
+| Parque Nacional | [Parque Nacional 1 Cuc.jpg](https://commons.wikimedia.org/wiki/File:Parque_Nacional_1_Cuc.jpg) | Tuhondre | CC BY-SA 4.0 |
+| Parque Juana Rangel de Cuéllar | [Parque Juana Rangel de Cuéllar Cúcuta NS, Col.jpg](https://commons.wikimedia.org/wiki/File:Parque_Juana_Rangel_de_Cu%C3%A9llar_C%C3%BAcuta_NS,_Col.jpg) | EEIM | CC BY-SA 4.0 |
+| Parque Los Pinos | [Parque Los Pinos Cúcuta NS.jpg](https://commons.wikimedia.org/wiki/File:Parque_Los_Pinos_C%C3%BAcuta_NS.jpg) | EEIM | CC BY-SA 4.0 |
+| Parque del Agua | [Parque del agua de noche Cúcuta NS, Col.JPG](https://commons.wikimedia.org/wiki/File:Parque_del_agua_de_noche_C%C3%BAcuta_NS,_Col.JPG) | EEIM | CC BY-SA 4.0 |
+| Parque Barrio Popular | [Parque Barrio Popular Cúcuta, Colombia.JPG](https://commons.wikimedia.org/wiki/File:Parque_Barrio_Popular_C%C3%BAcuta,_Colombia.JPG) | EEIM | CC BY-SA 4.0 |
+| Glorieta del Indio Motilón | [Parque Glorieta Indio Motilón Cúcuta NS, Colombia.jpg](https://commons.wikimedia.org/wiki/File:Parque_Glorieta_Indio_Motil%C3%B3n_C%C3%BAcuta_NS,_Colombia.jpg) | EEIM | CC BY-SA 4.0 |
+| Estadio General Santander | [Estadio GS de Cúcuta Col.JPG](https://commons.wikimedia.org/wiki/File:Estadio_GS_de_C%C3%BAcuta_Col.JPG) | EEIM | CC BY-SA 4.0 |
+| Parque Bavaria | [Parque Bavaria Cúcuta.jpeg](https://commons.wikimedia.org/wiki/File:Parque_Bavaria_C%C3%BAcuta.jpeg) | EEIM | CC BY-SA 3.0 |
+| Parque principal de San Luis | [Parque principal San Luis Cúcuta.jpg](https://commons.wikimedia.org/wiki/File:Parque_principal_San_Luis_C%C3%BAcuta.jpg) | No verificado | No verificada |
+
+El nombre Parque Colón/Parque La Victoria también se contrastó con el artículo [Parque Colón (Cúcuta)](https://es.wikipedia.org/wiki/Parque_Col%C3%B3n_(C%C3%BAcuta)), que identifica ambos nombres para el mismo espacio público. Las fichas de Commons son referencias de identificación, no sustituyen la verificación de horarios, acceso ni estado actual de los lugares.

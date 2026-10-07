@@ -1,17 +1,17 @@
 # Informe técnico y funcional
 ## Guía Turística de Cúcuta
 
-**Tipo de documento:** Informe descriptivo del programa web  
-**Versión revisada:** rama `develop`  
-**Fecha de elaboración:** 16 de octubre de 2026  
-**Ubicación del proyecto:** Cúcuta, Norte de Santander, Colombia  
+**Tipo de documento:** Informe descriptivo del programa web
+**Versión revisada:** rama `develop`
+**Fecha de actualización:** 16 de octubre de 2026
+**Ubicación del proyecto:** Cúcuta, Norte de Santander, Colombia
 **Naturaleza del proyecto:** guía informativa académica independiente
 
 > Este informe describe la implementación existente en el código. No constituye una certificación de accesibilidad, una auditoría de seguridad, una validación oficial de los lugares ni una afirmación de que la guía sea un servicio turístico oficial.
 
 ## 1. Resumen ejecutivo
 
-La Guía Turística de Cúcuta es un sitio web estático de una sola página que presenta una selección de lugares de interés histórico, cultural, natural, recreativo y comercial de Cúcuta. Permite recorrer las secciones mediante navegación interna, explorar nueve destinos, filtrarlos por categoría, buscarlos por nombre, categoría o ubicación, consultar sus detalles en una ventana emergente y abrir búsquedas de ubicación en Google Maps.
+La Guía Turística de Cúcuta es un sitio web estático de una sola página que presenta una selección de lugares de interés histórico, cultural, natural, recreativo y comercial de Cúcuta. Permite recorrer las secciones mediante navegación interna, explorar veinte destinos, filtrarlos por categoría, buscarlos por nombre, categoría o ubicación, consultar sus detalles en una ventana emergente y abrir búsquedas de ubicación en Google Maps.
 
 El programa se implementa con HTML5, CSS3 y JavaScript nativos. No utiliza un servidor de aplicación, una base de datos, un framework ni un proceso de compilación. Las fotografías disponibles se almacenan localmente; el crédito y la licencia de cada una se registran en un documento aparte. La ficha de Plaza de Banderas muestra deliberadamente un recurso visual de reserva porque en el catálogo no hay una fotografía identificada como verificada para ese sitio.
 
@@ -121,17 +121,17 @@ Al seleccionar uno de estos enlaces, el programa limpia el texto de búsqueda, a
 
 El catálogo se genera en el navegador a partir de los objetos definidos en `js/main.js`. Cada tarjeta presenta categoría, ubicación declarada, nombre, descripción, acción “Conocer lugar” y enlace “Mapa”.
 
-El catálogo actual contiene **nueve destinos**:
+El catálogo actual contiene **veinte destinos**:
 
 | Categoría interna | Cantidad | Destinos |
 | --- | ---: | --- |
-| Histórico y cultural (`historico`) | 5 | Parque Santander; Catedral de San José; Torre del Reloj; Quinta Teresa; Biblioteca Pública Julio Pérez Ferrero. |
-| Naturaleza (`naturaleza`) | 2 | Cristo Rey; Malecón de Cúcuta. |
-| Ocio y recreación (`ocio`) | 1 | Plaza de Banderas. |
+| Histórico y cultural (`historico`) | 7 | Parque Santander; Catedral de San José; Torre del Reloj; Quinta Teresa; Biblioteca Pública Julio Pérez Ferrero; Parque Colón (Parque La Victoria); Parque Juana Rangel de Cuéllar. |
+| Naturaleza (`naturaleza`) | 8 | Cristo Rey; Malecón de Cúcuta; Parque Mercedes Ábrego; Parque Nacional; Parque Los Pinos; Parque Barrio Popular; Parque Bavaria; Parque principal de San Luis. |
+| Ocio y recreación (`ocio`) | 4 | Plaza de Banderas; Parque del Agua; Glorieta del Indio Motilón; Estadio General Santander. |
 | Comercio (`comercio`) | 1 | Ventura Plaza. |
-| **Total** | **9** | — |
+| **Total** | **20** | — |
 
-La categoría comercial se distingue de ocio y recreación, aunque ambas aparecen juntas en algunos accesos de navegación. La biblioteca se agrupa bajo la categoría histórica en los filtros y usa “Cultural” como rótulo particular de su tarjeta.
+La categoría comercial se distingue de ocio y recreación, aunque ambas aparecen juntas en algunos accesos de navegación. La biblioteca se agrupa bajo la categoría histórica en los filtros y usa “Cultural” como rótulo particular de su tarjeta. Parque Colón y Parque La Victoria se presentan como un único lugar, pues son nombres del mismo espacio público.
 
 #### Filtrado
 
@@ -152,7 +152,7 @@ Si no hay coincidencias, las tarjetas se ocultan y aparece un mensaje que sugier
 
 #### Fotografías
 
-Las ocho fotografías actualmente asignadas a destinos tienen rutas locales. Las tarjetas cargan de forma diferida sus imágenes y declaran dimensiones para limitar cambios de diseño durante la carga. Si una imagen falla, se sustituye por un bloque alternativo. Plaza de Banderas usa un aviso de imagen pendiente de verificación y no reutiliza la foto de otro destino.
+Ocho de los veinte destinos tienen actualmente fotografías locales verificadas en el catálogo original. Las doce tarjetas restantes indican que no hay fotografía local disponible en esta versión; no reutilizan fotos de otros lugares. Las tarjetas con imagen cargan de forma diferida y declaran dimensiones para limitar cambios de diseño durante la carga. Si una imagen falla, se sustituye por un bloque alternativo. Las fichas de Commons consultadas para los nuevos destinos están separadas de las fotografías ya incorporadas en [`fuentes-imagenes.md`](./fuentes-imagenes.md); sus imágenes requieren descarga local y registro de atribución antes de mostrarse.
 
 **Evidencia visual sugerida**
 
@@ -180,7 +180,7 @@ Cada destino, tanto en su tarjeta como en el detalle, genera un enlace individua
 
 ### 5.7 Acerca de la guía
 
-La sección describe el propósito informativo del proyecto, su público y su alcance geográfico. También aclara que se trata de un proyecto académico independiente y que no es una publicación oficial. Las cifras de alcance se actualizan desde el catálogo para mostrar nueve destinos y una ciudad; se indican cuatro categorías.
+La sección describe el propósito informativo del proyecto, su público y su alcance geográfico. También aclara que se trata de un proyecto académico independiente y que no es una publicación oficial. Las cifras de alcance se actualizan desde el catálogo para mostrar veinte destinos y una ciudad; se indican cuatro categorías.
 
 ### 5.8 Pie de página
 
@@ -255,8 +255,8 @@ Durante la revisión local de la interfaz se comprobaron en navegador las operac
 
 | Comprobación | Resultado |
 | --- | --- |
-| Renderizado inicial del catálogo | Se verificó que aparecen nueve destinos. |
-| Filtros | Se comprobó que las categorías muestran el conjunto correspondiente; por ejemplo, Naturaleza presenta dos destinos y Comercio, uno. |
+| Renderizado inicial del catálogo | Se verificó que aparecen veinte destinos. |
+| Filtros | Se comprobó que las categorías muestran el conjunto correspondiente: Histórico y cultural presenta siete destinos, Naturaleza ocho, Ocio y recreación cuatro y Comercio uno. |
 | Búsqueda y combinación con rutas | Se comprobó la búsqueda por texto y que seleccionar una ruta limpia la consulta anterior y aplica el filtro. |
 | Resultados vacíos | Se comprobó que una consulta sin coincidencias muestra el mensaje previsto. |
 | Diálogo | Se comprobó su apertura, cierre con Escape y retorno del foco al botón que lo abrió. |
@@ -267,7 +267,7 @@ Estas comprobaciones son pruebas funcionales manuales/locales y no un conjunto a
 
 ## 12. Límites y aspectos pendientes identificados
 
-1. **Fotografía de Plaza de Banderas:** completar la verificación y el registro de la fuente antes de sustituir la reserva visual.
+1. **Fotografías de doce destinos:** Plaza de Banderas y los once lugares agregados muestran un bloque de imagen no disponible; las fuentes visuales revisadas para los lugares nuevos aún no se han incorporado localmente.
 2. **Profundidad de contenido:** las descripciones son breves; no se proporcionan horarios, tarifas ni condiciones de acceso confirmadas.
 3. **Verificación de ubicaciones:** los enlaces abren búsquedas de texto en Maps, por lo que el usuario debe confirmar el resultado exacto.
 4. **Contenido sin JavaScript:** existe un aviso, pero el catálogo dinámico no aparece si el script está deshabilitado.
@@ -290,6 +290,6 @@ Los espacios siguientes son opcionales. Sustituir cada marcador por una captura 
 
 ## 14. Conclusión
 
-La implementación actual cumple la función de una guía turística informativa estática: organiza nueve lugares de Cúcuta en categorías, permite encontrarlos mediante filtros y búsqueda y enlaza a consultas externas de ubicación. La separación entre estructura, estilos, lógica, recursos e información documental es clara y proporcional al tamaño presente del programa.
+La implementación actual cumple la función de una guía turística informativa estática: organiza veinte lugares de Cúcuta en categorías, permite encontrarlos mediante filtros y búsqueda y enlaza a consultas externas de ubicación. La separación entre estructura, estilos, lógica, recursos e información documental es clara y proporcional al tamaño presente del programa.
 
-Las limitaciones principales son la falta de una fotografía verificada para Plaza de Banderas, la dependencia de JavaScript para mostrar el catálogo y la ausencia de auditorías especializadas o pruebas automatizadas. El sitio identifica su carácter independiente y evita presentar horarios, precios o condiciones variables como información garantizada.
+Las limitaciones principales son la falta de fotografías locales para doce lugares, la dependencia de JavaScript para mostrar el catálogo y la ausencia de auditorías especializadas o pruebas automatizadas. El sitio identifica su carácter independiente y evita presentar horarios, precios o condiciones variables como información garantizada.
