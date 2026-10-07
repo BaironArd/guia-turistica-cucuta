@@ -55,6 +55,28 @@ const places = [
     mapQuery: "Biblioteca Pública Julio Pérez Ferrero, Cúcuta, Colombia"
   },
   {
+    id: "parque-colon",
+    name: "Parque Colón (Parque La Victoria)",
+    category: "historico",
+    categoryLabel: "Histórico y cultural",
+    location: "Barrio La Playa · Cúcuta",
+    description: "Espacio público también conocido como Parque La Victoria, contiguo a la Biblioteca Pública Julio Pérez Ferrero. Consulta su ubicación antes de iniciar el recorrido.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Colón Parque La Victoria, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-juana-rangel",
+    name: "Parque Juana Rangel de Cuéllar",
+    category: "historico",
+    categoryLabel: "Histórico y cultural",
+    location: "Cúcuta",
+    description: "Espacio público identificado con el nombre de Juana Rangel de Cuéllar. Consulta el mapa para verificar su ubicación y las condiciones de visita.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Juana Rangel de Cuéllar, Cúcuta, Colombia"
+  },
+  {
     id: "cristo-rey",
     name: "Cristo Rey",
     category: "naturaleza",
@@ -77,6 +99,72 @@ const places = [
     mapQuery: "Malecón, Cúcuta, Colombia"
   },
   {
+    id: "parque-mercedes-abrego",
+    name: "Parque Mercedes Ábrego",
+    category: "naturaleza",
+    categoryLabel: "Parque urbano",
+    location: "Cúcuta",
+    description: "Parque urbano de Cúcuta. Consulta su ubicación y las condiciones actuales del espacio antes de visitarlo.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Mercedes Ábrego, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-nacional",
+    name: "Parque Nacional",
+    category: "naturaleza",
+    categoryLabel: "Parque urbano",
+    location: "Cúcuta",
+    description: "Espacio público al aire libre en Cúcuta. Verifica en el mapa el punto de acceso correspondiente al parque.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Nacional, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-los-pinos",
+    name: "Parque Los Pinos",
+    category: "naturaleza",
+    categoryLabel: "Parque urbano",
+    location: "Cúcuta",
+    description: "Parque urbano identificado en la ciudad. Consulta el mapa para confirmar su ubicación antes de desplazarte.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Los Pinos, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-barrio-popular",
+    name: "Parque Barrio Popular",
+    category: "naturaleza",
+    categoryLabel: "Parque urbano",
+    location: "Barrio Popular · Cúcuta",
+    description: "Espacio público de barrio en Cúcuta. Consulta su ubicación y las condiciones del sector antes de visitarlo.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Barrio Popular, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-bavaria",
+    name: "Parque Bavaria",
+    category: "naturaleza",
+    categoryLabel: "Parque urbano",
+    location: "Cúcuta",
+    description: "Parque urbano identificado en Cúcuta. Revisa el mapa para ubicar el acceso y planear la visita.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque Bavaria, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-san-luis",
+    name: "Parque principal de San Luis",
+    category: "naturaleza",
+    categoryLabel: "Parque urbano",
+    location: "San Luis · Cúcuta",
+    description: "Parque del sector de San Luis en Cúcuta. Consulta el mapa para confirmar la ubicación exacta.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque principal San Luis, Cúcuta, Colombia"
+  },
+  {
     id: "plaza-banderas",
     name: "Plaza de Banderas",
     category: "ocio",
@@ -86,6 +174,39 @@ const places = [
     image: null,
     imageAlt: "",
     mapQuery: "Plaza de Banderas, Cúcuta, Colombia"
+  },
+  {
+    id: "parque-del-agua",
+    name: "Parque del Agua",
+    category: "ocio",
+    categoryLabel: "Ocio y recreación",
+    location: "Cúcuta",
+    description: "Espacio recreativo de la ciudad. Confirma con el operador o en fuentes locales si está abierto y consulta las condiciones de acceso.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Parque del Agua, Cúcuta, Colombia"
+  },
+  {
+    id: "glorieta-indio-motilon",
+    name: "Glorieta del Indio Motilón",
+    category: "ocio",
+    categoryLabel: "Espacio urbano",
+    location: "Cúcuta",
+    description: "Referente urbano identificado como Glorieta del Indio Motilón. Consulta el mapa para localizarla y planear el recorrido.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Glorieta Indio Motilón, Cúcuta, Colombia"
+  },
+  {
+    id: "estadio-general-santander",
+    name: "Estadio General Santander",
+    category: "ocio",
+    categoryLabel: "Deportivo y recreativo",
+    location: "Cúcuta",
+    description: "Escenario deportivo de Cúcuta. La realización de eventos, el ingreso y los horarios dependen de la programación vigente.",
+    image: null,
+    imageAlt: "",
+    mapQuery: "Estadio General Santander, Cúcuta, Colombia"
   },
   {
     id: "ventura-plaza",
@@ -141,7 +262,7 @@ function normalizeText(value) {
 function renderPlace(place) {
   const imageMarkup = place.image
     ? `<img class="card-image" src="${place.image}" alt="${place.imageAlt}" width="1000" height="640" loading="lazy">`
-    : `<div class="image-fallback" role="img" aria-label="Fotografía de ${place.name} pendiente de verificación">Fotografía pendiente de verificación</div>`;
+    : `<div class="image-fallback" role="img" aria-label="Fotografía de ${place.name} no disponible en esta versión">Fotografía no disponible en esta versión</div>`;
 
   return `
     <article class="destination-card">
