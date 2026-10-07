@@ -11,6 +11,7 @@ Guía web informativa e independiente para explorar lugares históricos, cultura
 - Fotografías locales con créditos y licencias registrados en [`docs/fuentes-imagenes.md`](docs/fuentes-imagenes.md).
 - Diseño adaptable, estados de foco visibles y respeto por la preferencia de movimiento reducido.
 - Aviso para quienes desactiven JavaScript y respaldo visual cuando una fotografía no esté disponible o verificada.
+- Informe funcional y técnico detallado en [`docs/informe-tecnico-guia-turistica.md`](docs/informe-tecnico-guia-turistica.md).
 
 ## Ejecutar
 
