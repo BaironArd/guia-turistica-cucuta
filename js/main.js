@@ -1,3 +1,5 @@
+// Catálogo local que alimenta las tarjetas, los filtros, los contadores y el diálogo de detalles.
+// Cada elemento aporta los datos de presentación y la consulta textual que se envía a Google Maps.
 const places = [
   {
     id: "parque-santander",
@@ -221,6 +223,7 @@ const places = [
   }
 ];
 
+// Etiquetas plurales y singulares usadas al anunciar el número de resultados.
 const categoryNames = {
   todos: "todos los lugares",
   historico: "lugares históricos y culturales",
@@ -237,6 +240,7 @@ const singularCategoryNames = {
   comercio: "lugar de comercio"
 };
 
+// Referencias a los elementos definidos en index.html que se actualizan durante la interacción.
 const grid = document.querySelector("#destination-grid");
 const searchInput = document.querySelector("#destination-search");
 const status = document.querySelector("#result-status");
@@ -251,14 +255,30 @@ let selectedCategory = "todos";
 let lastDialogTrigger = null;
 let failedDialogImage = null;
 
+/**
+ * Construye una URL de búsqueda de Google Maps a partir del texto del destino.
+ * @param {string} query Texto de búsqueda definido en el registro del lugar.
+ * @returns {string} URL con la consulta codificada para incluirla en enlaces.
+ */
 function mapUrl(query) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
+/**
+ * Normaliza texto para que las búsquedas no distingan mayúsculas ni diacríticos.
+ * @param {string} value Texto que se va a comparar.
+ * @returns {string} Texto en minúsculas y sin marcas diacríticas.
+ * Se usa al filtrar los campos de nombre, categoría y ubicación del catálogo.
+ */
 function normalizeText(value) {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es");
 }
 
+/**
+ * Genera el marcado de una tarjeta para un lugar, incluida su imagen o reserva visual.
+ * @param {Object} place Registro del catálogo con los datos que presenta la tarjeta.
+ * @returns {string} Fragmento HTML que updatePlaces inserta en la cuadrícula.
+ */
 function renderPlace(place) {
   const imageMarkup = place.image
     ? `<img class="card-image" src="${place.image}" alt="${place.imageAlt}" width="1000" height="640" loading="lazy">`
@@ -282,6 +302,11 @@ function renderPlace(place) {
     </article>`;
 }
 
+/**
+ * Filtra el catálogo por la categoría y el texto actuales, actualiza resultados y estados,
+ * y conecta los controles de las tarjetas recién generadas con sus manejadores.
+ * No recibe parámetros ni devuelve un valor; se invoca al iniciar y al cambiar los controles.
+ */
 function updatePlaces() {
   const query = normalizeText(searchInput.value.trim());
   const visiblePlaces = places.filter((place) => {
@@ -295,6 +320,7 @@ function updatePlaces() {
   const resultCategory = visiblePlaces.length === 1 ? singularCategoryNames[selectedCategory] : categoryNames[selectedCategory];
   status.textContent = `${visiblePlaces.length} ${resultCategory}${query ? ` para “${searchInput.value.trim()}”` : ""}.`;
 
+  // Sustituye una imagen que falla por una reserva textual accesible.
   grid.querySelectorAll(".card-image").forEach((image) => {
     image.addEventListener("error", () => {
       const fallback = document.createElement("div");
@@ -305,11 +331,17 @@ function updatePlaces() {
       image.replaceWith(fallback);
     }, { once: true });
   });
+  // Cada botón de detalle abre el diálogo para el destino de su tarjeta.
   grid.querySelectorAll("[data-place-id]").forEach((button) => {
     button.addEventListener("click", () => openPlaceDialog(button.dataset.placeId, button));
   });
 }
 
+/**
+ * Cambia la categoría activa y sincroniza su representación visual y aria-pressed.
+ * @param {string} category Identificador de categoría correspondiente a data-filter.
+ * @returns {void} Actualiza también el catálogo mediante updatePlaces.
+ */
 function selectCategory(category) {
   selectedCategory = category;
   filterButtons.forEach((button) => {
@@ -320,6 +352,12 @@ function selectCategory(category) {
   updatePlaces();
 }
 
+/**
+ * Rellena y abre el diálogo nativo con los datos de un lugar del catálogo.
+ * @param {string} id Identificador del destino que se busca en places.
+ * @param {HTMLElement} trigger Botón que inició la apertura y recibirá de nuevo el foco al cerrar.
+ * @returns {void} Si el identificador existe, sincroniza el contenido del diálogo y lo muestra.
+ */
 function openPlaceDialog(id, trigger) {
   const place = places.find((candidate) => candidate.id === id);
   if (!place) return;
@@ -352,27 +390,36 @@ function openPlaceDialog(id, trigger) {
   dialog.querySelector(".dialog-close").focus();
 }
 
+/**
+ * Cierra el menú móvil y sincroniza su estado expandido con la navegación.
+ * No recibe parámetros ni devuelve un valor; se conecta a los enlaces del menú y a Escape.
+ */
 function closeMenu() {
   menuToggle.setAttribute("aria-expanded", "false");
   primaryNav.classList.remove("is-open");
 }
 
+// Los filtros actualizan la categoría; la entrada de búsqueda vuelve a generar los resultados.
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => selectCategory(button.dataset.filter));
 });
 searchInput.addEventListener("input", updatePlaces);
+// Los enlaces temáticos limpian la consulta previa y aplican la categoría asociada al enlace.
 document.querySelectorAll("[data-category-link]").forEach((link) => {
   link.addEventListener("click", () => {
     searchInput.value = "";
     selectCategory(link.dataset.categoryLink);
   });
 });
+// El botón móvil alterna el estado visual del menú y aria-expanded.
 menuToggle.addEventListener("click", () => {
   const expanded = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!expanded));
   primaryNav.classList.toggle("is-open", !expanded);
 });
+// Al elegir un enlace de navegación se cierra el menú desplegable.
 primaryNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+// Atajos de teclado: Escape cierra el diálogo o el menú; "/" enfoca la búsqueda fuera de campos de texto.
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && dialog.open) {
     event.preventDefault();
@@ -385,12 +432,14 @@ document.addEventListener("keydown", (event) => {
     searchInput.focus();
   }
 });
+// Controles de cierre del diálogo; al cerrarse, el foco vuelve al botón que lo abrió.
 dialog.querySelector(".dialog-close").addEventListener("click", () => dialog.close());
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) dialog.close();
 });
 dialog.addEventListener("close", () => lastDialogTrigger?.focus());
 
+// Observa la sección visible y sincroniza la clase y aria-current del enlace principal correspondiente.
 const sectionLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
 if ("IntersectionObserver" in window) {
   const sectionObserver = new IntersectionObserver((entries) => {
@@ -407,6 +456,7 @@ if ("IntersectionObserver" in window) {
   document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
 }
 
+// Valores iniciales derivados del catálogo y primer renderizado del explorador.
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 document.querySelector("#place-total").textContent = places.length;
 document.querySelectorAll("[data-count]").forEach((count) => {

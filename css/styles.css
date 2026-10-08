@@ -1,4 +1,5 @@
 :root {
+  /* Paleta, familias tipográficas y ancho máximo compartidos por los componentes del sitio. */
   color-scheme: light;
   --ink: #18332e;
   --forest: #153f38;
@@ -14,6 +15,7 @@
   --container: 1200px;
 }
 
+/* Reglas base, comportamiento de foco y utilidades de disposición y texto accesible. */
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
@@ -29,6 +31,7 @@ img { display: block; max-width: 100%; }
 .skip-link { position: fixed; z-index: 100; top: 12px; left: 12px; transform: translateY(-160%); padding: 10px 16px; color: var(--white); background: var(--forest-dark); border-radius: 4px; }
 .skip-link:focus { transform: translateY(0); }
 
+/* Cabecera adhesiva, marca, enlaces activos y estados de interacción de los controles superiores. */
 .site-header { position: sticky; z-index: 20; top: 0; height: 78px; background: rgba(251, 250, 247, .96); border-bottom: 1px solid rgba(24, 51, 46, .08); backdrop-filter: blur(12px); }
 .header-inner { display: flex; height: 100%; align-items: center; justify-content: space-between; gap: 32px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; flex: 0 0 auto; }
@@ -46,6 +49,7 @@ img { display: block; max-width: 100%; }
 .header-cta span { font-size: 15px; }
 .menu-toggle { display: none; }
 
+/* Portada con imagen de fondo, capa de contraste, contenido y acciones principales. */
 .hero { position: relative; min-height: min(690px, calc(100svh - 78px)); min-height: clamp(570px, 72vw, 690px); overflow: hidden; color: var(--white); background: #344e42; }
 .hero-image, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-image { object-fit: cover; object-position: center 45%; }
@@ -70,6 +74,7 @@ h1, h2, p { margin-top: 0; }
 .hero-scroll { position: absolute; right: max(32px, calc((100% - var(--container)) / 2)); bottom: 30px; display: grid; width: 39px; height: 39px; place-items: center; color: var(--white); border: 1px solid rgba(255, 255, 255, .65); border-radius: 50%; font-size: 20px; text-decoration: none; }
 .hero-scroll:hover { color: var(--forest); background: var(--white); }
 
+/* Introducción y listado de rutas temáticas con estados hover en enlaces e indicadores. */
 .section-pad { padding-block: 112px; }
 .intro { background: var(--paper); }
 .intro-layout { display: grid; grid-template-columns: .8fr 1.3fr 1.5fr; align-items: start; gap: clamp(34px, 6vw, 88px); }
@@ -94,6 +99,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .route-arrow { color: #a96843; font-size: 17px; transition: transform .2s; }
 .route-item:hover .route-arrow { transform: translate(3px, -3px); }
 
+/* Controles del catálogo, botones de filtro, búsqueda, tarjetas, imágenes y estado vacío. */
 .destinations { background: #f1f0e9; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 42px; margin-bottom: 42px; }
 .section-heading .section-kicker { margin-bottom: 31px; }
@@ -131,6 +137,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .card-map { display: inline-flex; align-items: center; gap: 5px; color: #77847b; }
 .empty-state { margin: 34px 0 0; padding: 28px; color: #68766e; border: 1px dashed #bac6ba; text-align: center; }
 
+/* Sección de mapas: texto y representación gráfica decorativa compuesta en CSS. */
 .map-section { overflow: hidden; color: var(--white); background: var(--forest); }
 .map-layout { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(50px, 10vw, 130px); }
 .section-kicker-light { margin-bottom: 34px; color: #c4d0c6; }
@@ -154,6 +161,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .label-one { top: 43%; left: calc(49% + 27px); }.label-two { top: 73%; left: 12%; color: rgba(232, 238, 228, .56); font-size: 9px; }
 .map-compass { position: absolute; top: 17px; right: 18px; display: grid; color: #b8cbb8; font-size: 9px; text-align: center; }.map-compass i { font-size: 17px; font-style: normal; }
 
+/* Presentación del proyecto y disposición de las cifras resumen. */
 .about { background: var(--paper); }
 .about-layout { display: grid; grid-template-columns: .7fr 1.4fr .85fr; align-items: center; gap: clamp(35px, 7vw, 95px); }
 .about-mark { position: relative; display: grid; width: min(220px, 100%); aspect-ratio: 1; place-items: center; color: #dce4d5; border: 1px solid #dce4d8; border-radius: 50%; font-family: var(--serif); font-size: 130px; line-height: 1; }
@@ -170,6 +178,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .about-stats strong { color: var(--forest); font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1.1; }
 .about-stats span { color: #78857d; font-size: 10px; }
 
+/* Pie de página con navegación secundaria y metadatos del proyecto. */
 .site-footer { color: #e6ede6; background: #102e29; }
 .footer-main { display: grid; min-height: 180px; grid-template-columns: 1.1fr 1fr 1fr auto; align-items: center; gap: 34px; }
 .footer-brand .brand-mark { color: var(--forest); background: #d7e0c5; }
@@ -181,6 +190,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .footer-bottom { display: flex; min-height: 54px; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 22px; color: #9db0a5; border-top: 1px solid rgba(255, 255, 255, .13); font-size: 9px; }
 .footer-bottom a { color: #d1ddcf; text-underline-offset: 3px; }
 
+/* Ventana de detalles nativa, fondo modal, imagen o reserva y control de cierre. */
 .place-dialog { position: fixed; width: min(560px, calc(100% - 32px)); max-width: none; max-height: min(90vh, 780px); padding: 0; overflow: auto; color: var(--ink); border: 0; background: var(--paper); box-shadow: 0 24px 100px rgba(0, 0, 0, .3); }
 .place-dialog::backdrop { background: rgba(13, 32, 28, .72); backdrop-filter: blur(3px); }
 .place-dialog > img { width: 100%; height: 260px; object-fit: cover; background: #dbe3d8; }
@@ -193,7 +203,9 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .dialog-body > p:not(.eyebrow) { color: #68766e; font-size: 13px; line-height: 1.8; }
 .dialog-body .button { margin-top: 8px; }
 
+/* Aumenta la altura de la portada en monitores muy amplios. */
 @media (min-width: 1500px) { .hero { min-height: 740px; } }
+/* Ajustes intermedios de ancho, columnas y distribución para tabletas y ventanas compactas. */
 @media (max-width: 960px) {
   .container { width: min(var(--container), calc(100% - 48px)); }
   .header-inner { gap: 20px; }.primary-nav { gap: 16px; }.primary-nav a { font-size: 11px; }
@@ -203,6 +215,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
   .about-stats > div { align-content: start; }
 }
 @media (max-width: 700px) {
+  /* En móvil se compacta la cabecera, se activa el menú desplegable y se apilan las secciones. */
   html { scroll-padding-top: 70px; }
   .container { width: calc(100% - 40px); }
   .site-header { height: 68px; }.header-inner { gap: 14px; }
@@ -230,12 +243,15 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
   .footer-bottom { justify-content: flex-start; padding-block: 15px; }
   .place-dialog > img, .dialog-image-fallback { height: 200px; }.dialog-body { padding: 22px 22px 25px; }
 }
+/* En teléfonos muy estrechos se reducen espacios y se oculta la acción secundaria de cabecera. */
 @media (max-width: 370px) {
+  /* Ajustes adicionales cuando el ancho disponible es especialmente reducido. */
   .container { width: calc(100% - 32px); }
   .brand { gap: 7px; }.header-cta { display: none; }
   .hero-actions { align-items: stretch; flex-direction: column; width: min(245px, 100%); }.hero-actions .button { justify-content: space-between; }
   .route-item { grid-template-columns: 22px 32px 1fr 16px; gap: 8px; }.route-copy small { font-size: 10px; }
 }
+/* La preferencia del sistema reduce animaciones, transiciones y desplazamiento suave. */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

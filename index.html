@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!-- Metadatos del documento, recursos tipográficos y archivos propios de presentación e interacción. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Explora lugares históricos, espacios al aire libre y sitios de encuentro de Cúcuta con esta guía turística independiente.">
@@ -13,6 +14,7 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
+    <!-- Enlace de salto y cabecera persistente con navegación principal y acceso al catálogo. -->
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <div class="container header-inner">
@@ -37,6 +39,7 @@
     </header>
 
     <main id="contenido">
+      <!-- Portada: imagen principal, presentación y enlaces a las rutas y destinos. -->
       <section class="hero" id="inicio" aria-labelledby="hero-title">
         <img class="hero-image" src="assets/images/cucuta-panorama.jpg" alt="Vista panorámica de Cúcuta desde Torcoroma" width="1280" height="853" fetchpriority="high">
         <div class="hero-shade"></div>
@@ -53,6 +56,7 @@
         <a class="hero-scroll" href="#rutas" aria-label="Desplazarse a las rutas"><span aria-hidden="true">↓</span></a>
       </section>
 
+      <!-- Introducción a las rutas; sus enlaces de categoría son procesados por main.js. -->
       <section class="intro section-pad" id="rutas" aria-labelledby="routes-title">
         <div class="container intro-layout">
           <div class="section-kicker"><span>01</span><span class="kicker-line"></span><span>Empieza por aquí</span></div>
@@ -79,6 +83,7 @@
         </div>
       </section>
 
+      <!-- Explorador dinámico: main.js inserta aquí las tarjetas y actualiza filtros, búsqueda y resultados. -->
       <section class="destinations section-pad" id="destinos" aria-labelledby="destinations-title">
         <div class="container">
           <div class="section-heading">
@@ -90,6 +95,7 @@
             <p class="section-heading-note">Una selección para conocer Cúcuta desde sus espacios y su gente. Consulta cada ubicación antes de salir.</p>
           </div>
 
+          <!-- Grupo de filtros, búsqueda con etiqueta visualmente oculta e indicador de atajo de teclado. -->
           <div class="explore-controls">
             <div class="filter-list" role="group" aria-label="Filtrar lugares por categoría">
               <button class="filter-button is-selected" type="button" data-filter="todos" aria-pressed="true">Todos <span data-count="todos"></span></button>
@@ -105,6 +111,7 @@
               <kbd aria-hidden="true">/</kbd>
             </label>
           </div>
+          <!-- Región anunciable de resultados, contenedor de tarjetas y estados sin resultados o sin JavaScript. -->
           <p class="result-status" id="result-status" aria-live="polite"></p>
           <div class="destination-grid" id="destination-grid"></div>
           <p class="empty-state" id="empty-state" hidden>No encontramos lugares con esos criterios. Prueba con otra búsqueda o categoría.</p>
@@ -112,6 +119,7 @@
         </div>
       </section>
 
+      <!-- Acceso externo a la búsqueda de Cúcuta en Google Maps junto a un gráfico decorativo. -->
       <section class="map-section section-pad" id="mapa" aria-labelledby="map-title">
         <div class="container map-layout">
           <div class="map-copy">
@@ -131,6 +139,7 @@
         </div>
       </section>
 
+      <!-- Descripción del alcance del proyecto y cifras, con el total de lugares actualizado desde main.js. -->
       <section class="about section-pad" id="acerca" aria-labelledby="about-title">
         <div class="container about-layout">
           <div class="about-mark" aria-hidden="true"><span>G</span><i>·</i></div>
@@ -150,6 +159,7 @@
       </section>
     </main>
 
+    <!-- Navegación secundaria, enlace al registro de imágenes y año actualizado mediante JavaScript. -->
     <footer class="site-footer">
       <div class="container footer-main">
         <a class="brand footer-brand" href="#inicio" aria-label="Guía Turística de Cúcuta, volver al inicio">
@@ -168,6 +178,7 @@
       </div>
     </footer>
 
+    <!-- Diálogo nativo rellenado por main.js con el detalle del destino seleccionado y su enlace de mapa. -->
     <dialog class="place-dialog" id="place-dialog" aria-labelledby="dialog-title">
       <button class="dialog-close" type="button" aria-label="Cerrar detalles">×</button>
       <img id="dialog-image" src="" alt="" width="1000" height="640">
