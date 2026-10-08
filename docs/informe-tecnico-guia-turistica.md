@@ -3,7 +3,8 @@
 
 **Tipo de documento:** Informe descriptivo del programa web
 **Versión revisada:** rama `develop`
-**Fecha de actualización:** 16 de octubre de 2026
+**Fecha de actualización:** 7 de octubre de 2026
+**Corte del contenido del programa:** 7 de octubre de 2026 (`develop`, commit `53aee01`)
 **Ubicación del proyecto:** Cúcuta, Norte de Santander, Colombia
 **Naturaleza del proyecto:** guía informativa académica independiente
 
