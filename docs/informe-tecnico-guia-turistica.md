@@ -152,7 +152,7 @@ Si no hay coincidencias, las tarjetas se ocultan y aparece un mensaje que sugier
 
 #### Fotografías
 
-Ocho de los veinte destinos tienen actualmente fotografías locales verificadas en el catálogo original. Las doce tarjetas restantes indican que no hay fotografía local disponible en esta versión; no reutilizan fotos de otros lugares. Las tarjetas con imagen cargan de forma diferida y declaran dimensiones para limitar cambios de diseño durante la carga. Si una imagen falla, se sustituye por un bloque alternativo. Las fichas de Commons consultadas para los nuevos destinos están separadas de las fotografías ya incorporadas en [`fuentes-imagenes.md`](./fuentes-imagenes.md); sus imágenes requieren descarga local y registro de atribución antes de mostrarse.
+Diecinueve de los veinte destinos cuentan ahora con fotografías locales asignadas. Plaza de Banderas mantiene un bloque alternativo porque todavía no se ha identificado una fotografía que corresponda con suficiente certeza al lugar. Las tarjetas con fotografía cargan sus archivos locales de forma diferida y declaran dimensiones para limitar cambios de diseño durante la carga. Si una imagen falla, se sustituye por un bloque alternativo. Los archivos, autores, licencias y fichas fuente de las nuevas fotografías están registrados en [`fuentes-imagenes.md`](./fuentes-imagenes.md).
 
 **Evidencia visual sugerida**
 
@@ -259,6 +259,7 @@ Durante la revisión local de la interfaz se comprobaron en navegador las operac
 | Filtros | Se comprobó que las categorías muestran el conjunto correspondiente: Histórico y cultural presenta siete destinos, Naturaleza ocho, Ocio y recreación cuatro y Comercio uno. |
 | Búsqueda y combinación con rutas | Se comprobó la búsqueda por texto y que seleccionar una ruta limpia la consulta anterior y aplica el filtro. |
 | Resultados vacíos | Se comprobó que una consulta sin coincidencias muestra el mensaje previsto. |
+| Fotografías del catálogo | Se comprobaron en navegador 19 imágenes cargadas correctamente; Plaza de Banderas conserva una reserva por falta de una imagen verificada. |
 | Diálogo | Se comprobó su apertura, cierre con Escape y retorno del foco al botón que lo abrió. |
 | Enlaces de mapas | Se comprobó que el diálogo actualiza el enlace al destino seleccionado. |
 | Respaldo de imágenes | Se comprobó mediante una respuesta de imagen simulada como fallida que las tarjetas y el diálogo muestran un bloque alternativo. |
@@ -267,7 +268,7 @@ Estas comprobaciones son pruebas funcionales manuales/locales y no un conjunto a
 
 ## 12. Límites y aspectos pendientes identificados
 
-1. **Fotografías de doce destinos:** Plaza de Banderas y los once lugares agregados muestran un bloque de imagen no disponible; las fuentes visuales revisadas para los lugares nuevos aún no se han incorporado localmente.
+1. **Fotografía de Plaza de Banderas:** este destino conserva un bloque de imagen no disponible porque no se ha verificado una fotografía que lo represente correctamente.
 2. **Profundidad de contenido:** las descripciones son breves; no se proporcionan horarios, tarifas ni condiciones de acceso confirmadas.
 3. **Verificación de ubicaciones:** los enlaces abren búsquedas de texto en Maps, por lo que el usuario debe confirmar el resultado exacto.
 4. **Contenido sin JavaScript:** existe un aviso, pero el catálogo dinámico no aparece si el script está deshabilitado.
@@ -292,4 +293,4 @@ Los espacios siguientes son opcionales. Sustituir cada marcador por una captura 
 
 La implementación actual cumple la función de una guía turística informativa estática: organiza veinte lugares de Cúcuta en categorías, permite encontrarlos mediante filtros y búsqueda y enlaza a consultas externas de ubicación. La separación entre estructura, estilos, lógica, recursos e información documental es clara y proporcional al tamaño presente del programa.
 
-Las limitaciones principales son la falta de fotografías locales para doce lugares, la dependencia de JavaScript para mostrar el catálogo y la ausencia de auditorías especializadas o pruebas automatizadas. El sitio identifica su carácter independiente y evita presentar horarios, precios o condiciones variables como información garantizada.
+Las limitaciones principales son la falta de una fotografía verificada para Plaza de Banderas, la dependencia de JavaScript para mostrar el catálogo y la ausencia de auditorías especializadas o pruebas automatizadas. El sitio identifica su carácter independiente y evita presentar horarios, precios o condiciones variables como información garantizada.

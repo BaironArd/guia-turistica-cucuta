@@ -61,8 +61,8 @@ const places = [
     categoryLabel: "Histórico y cultural",
     location: "Barrio La Playa · Cúcuta",
     description: "Espacio público también conocido como Parque La Victoria, contiguo a la Biblioteca Pública Julio Pérez Ferrero. Consulta su ubicación antes de iniciar el recorrido.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-colon.jpg",
+    imageAlt: "Parque Colón, también llamado Parque La Victoria, en Cúcuta",
     mapQuery: "Parque Colón Parque La Victoria, Cúcuta, Colombia"
   },
   {
@@ -72,8 +72,8 @@ const places = [
     categoryLabel: "Histórico y cultural",
     location: "Cúcuta",
     description: "Espacio público identificado con el nombre de Juana Rangel de Cuéllar. Consulta el mapa para verificar su ubicación y las condiciones de visita.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-juana-rangel.jpg",
+    imageAlt: "Parque Juana Rangel de Cuéllar en Cúcuta",
     mapQuery: "Parque Juana Rangel de Cuéllar, Cúcuta, Colombia"
   },
   {
@@ -105,8 +105,8 @@ const places = [
     categoryLabel: "Parque urbano",
     location: "Cúcuta",
     description: "Parque urbano de Cúcuta. Consulta su ubicación y las condiciones actuales del espacio antes de visitarlo.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-mercedes-abrego.jpg",
+    imageAlt: "Parque Mercedes Ábrego en Cúcuta",
     mapQuery: "Parque Mercedes Ábrego, Cúcuta, Colombia"
   },
   {
@@ -116,8 +116,8 @@ const places = [
     categoryLabel: "Parque urbano",
     location: "Cúcuta",
     description: "Espacio público al aire libre en Cúcuta. Verifica en el mapa el punto de acceso correspondiente al parque.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-nacional.jpg",
+    imageAlt: "Parque Nacional en Cúcuta",
     mapQuery: "Parque Nacional, Cúcuta, Colombia"
   },
   {
@@ -127,8 +127,8 @@ const places = [
     categoryLabel: "Parque urbano",
     location: "Cúcuta",
     description: "Parque urbano identificado en la ciudad. Consulta el mapa para confirmar su ubicación antes de desplazarte.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-los-pinos.jpg",
+    imageAlt: "Parque Los Pinos en Cúcuta",
     mapQuery: "Parque Los Pinos, Cúcuta, Colombia"
   },
   {
@@ -138,8 +138,8 @@ const places = [
     categoryLabel: "Parque urbano",
     location: "Barrio Popular · Cúcuta",
     description: "Espacio público de barrio en Cúcuta. Consulta su ubicación y las condiciones del sector antes de visitarlo.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-barrio-popular.jpg",
+    imageAlt: "Parque del barrio Popular en Cúcuta",
     mapQuery: "Parque Barrio Popular, Cúcuta, Colombia"
   },
   {
@@ -149,8 +149,8 @@ const places = [
     categoryLabel: "Parque urbano",
     location: "Cúcuta",
     description: "Parque urbano identificado en Cúcuta. Revisa el mapa para ubicar el acceso y planear la visita.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-bavaria.jpg",
+    imageAlt: "Parque Bavaria en Cúcuta",
     mapQuery: "Parque Bavaria, Cúcuta, Colombia"
   },
   {
@@ -160,8 +160,8 @@ const places = [
     categoryLabel: "Parque urbano",
     location: "San Luis · Cúcuta",
     description: "Parque del sector de San Luis en Cúcuta. Consulta el mapa para confirmar la ubicación exacta.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-san-luis.jpg",
+    imageAlt: "Parque principal del sector San Luis en Cúcuta",
     mapQuery: "Parque principal San Luis, Cúcuta, Colombia"
   },
   {
@@ -182,8 +182,8 @@ const places = [
     categoryLabel: "Ocio y recreación",
     location: "Cúcuta",
     description: "Espacio recreativo de la ciudad. Confirma con el operador o en fuentes locales si está abierto y consulta las condiciones de acceso.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/parque-del-agua.jpg",
+    imageAlt: "Parque del Agua en Cúcuta iluminado de noche",
     mapQuery: "Parque del Agua, Cúcuta, Colombia"
   },
   {
@@ -193,8 +193,8 @@ const places = [
     categoryLabel: "Espacio urbano",
     location: "Cúcuta",
     description: "Referente urbano identificado como Glorieta del Indio Motilón. Consulta el mapa para localizarla y planear el recorrido.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/glorieta-indio-motilon.jpg",
+    imageAlt: "Parque y glorieta del Indio Motilón en Cúcuta",
     mapQuery: "Glorieta Indio Motilón, Cúcuta, Colombia"
   },
   {
@@ -204,8 +204,8 @@ const places = [
     categoryLabel: "Deportivo y recreativo",
     location: "Cúcuta",
     description: "Escenario deportivo de Cúcuta. La realización de eventos, el ingreso y los horarios dependen de la programación vigente.",
-    image: null,
-    imageAlt: "",
+    image: "assets/images/estadio-general-santander.jpg",
+    imageAlt: "Estadio General Santander en Cúcuta",
     mapQuery: "Estadio General Santander, Cúcuta, Colombia"
   },
   {
