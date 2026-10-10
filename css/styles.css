@@ -39,6 +39,8 @@ img { display: block; max-width: 100%; }
 .brand-copy { display: grid; color: var(--ink); line-height: 1.12; }
 .brand-copy strong { font-size: 14px; font-weight: 700; letter-spacing: .03em; }
 .brand-copy > span { color: var(--muted); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+/* ERR-A11Y-02: Antes la marca superior heredaba #697770 de --muted (4.49:1, inferior a 4.5:1). Regla histórica: .brand-copy > span { color: var(--muted); } */
+.header-inner .brand-copy > span { color: #66746c; }
 .primary-nav { display: flex; align-items: center; gap: clamp(18px, 2.6vw, 38px); margin-left: auto; }
 .primary-nav a, .footer-nav a { position: relative; color: #46574f; font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s ease; }
 .primary-nav a::after { position: absolute; right: 0; bottom: -8px; left: 0; height: 2px; background: #ba7046; content: ""; transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
