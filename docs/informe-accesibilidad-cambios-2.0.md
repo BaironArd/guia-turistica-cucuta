@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01 y F02 implementadas; verificaciones automáticas posteriores y evidencias visuales pendientes.
+**Estado del documento:** F01, F02 y F03 implementadas; verificaciones automáticas posteriores y evidencias visuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -142,6 +142,71 @@ Capturar el mismo navegador, viewport y estado de la cabecera antes y después. 
 
 > **Pendiente:** insertar `F02-ERR-A11Y-02-contraste-despues.png` aquí. Debe mostrar la medición real posterior y el resultado de la regla `color-contrast`.
 
+## Unidad F03 — Contraste de introducción y rutas
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-03
+**Problema:** en la sección de rutas, texto pequeño tenía contraste inferior a 4,5:1: número del kicker 4,23:1; texto del kicker 3,75:1; eyebrow 3,70:1; números de ruta 3,19:1 y descripciones de ruta 3,61:1. Los dos últimos casos se repiten en los tres accesos a rutas.
+**Fuentes originales:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos, axe DevTools 4.13.0, 17 de octubre de 2026 a las 21:16:36Z); `docs/lighthouse-reporte.json` (Lighthouse 13.4.1, 17 de octubre de 2026 a las 20:30:57Z); `docs/lighthouse-reporte.html` (Lighthouse 13.4.1, 17 de octubre de 2026 a las 20:48:53Z). Axe/Lighthouse coinciden en los incumplimientos de contraste estándar en esta sección.
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable a estos textos pequeños.
+**Prioridad:** P2, ya que varios rótulos y descripciones de los accesos de rutas no alcanzaban el mínimo.
+**Estado de implementación:** corregida en `css/styles.css` con reglas acotadas a `.intro`.
+**Estado de verificación WCAG:** la inspección del estado renderizado en navegador confirmó ratios superiores a 4,5:1 tanto normal como en hover. axe DevTools y Lighthouse aún deben volver a ejecutarse; no se declara el criterio completamente verificado hasta revisar sus resultados.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+Antes, la sección heredaba los siguientes colores de las reglas generales:
+
+```css
+.section-kicker { color: #76847a; }
+.section-kicker > span:first-child { color: #a96843; }
+.eyebrow { color: #73867b; }
+.route-number { color: #829087; }
+.route-copy small { color: #7b867f; }
+```
+
+Estos valores daban ratios entre 3,19:1 y 4,23:1 según el texto, por debajo de 4,5:1. Se conserva el resumen de los colores anteriores en el comentario `ERR-A11Y-03` del CSS. La corrección aplica `#626f68` únicamente a kicker, número de kicker, eyebrow, número de ruta y descripción de ruta dentro de `.intro`; las reglas generales y otras secciones permanecen sin cambios.
+
+El color `#626f68` da 5,04:1 sobre el fondo normal `#fbfaf7` y 4,76:1 sobre el fondo hover `#f4f4ed`. Estos ratios calculados superan 4,5:1, pero la comprobación final requiere validar los colores renderizados y las auditorías.
+
+### Pruebas y estado
+
+- **Revisión de código:** se comprobó que los overrides están limitados a la sección `.intro`; no se modificaron funciones ni contenido.
+- **Inspección en navegador con Playwright:** el estado normal presentó texto `rgb(98, 111, 104)` sobre fondo `rgb(251, 250, 247)`, con ratio **5,04:1** en kicker, número, eyebrow y textos de las tres rutas.
+- **Inspección de hover con Playwright:** los tres enlaces de ruta presentaron fondo `rgb(244, 244, 237)` y textos `rgb(98, 111, 104)`. En cada número y descripción se obtuvo un ratio de **4,76:1** sobre el fondo hover.
+- **axe DevTools y Lighthouse:** pendientes de ejecutar después del cambio; comprobar los elementos del kicker, eyebrow y tres enlaces de ruta.
+- **Capturas:** pendientes; no se han creado evidencias visuales en esta fase.
+
+La implementación está aplicada y las dos combinaciones inspeccionadas en navegador superan numéricamente el mínimo. WCAG no se declara completamente verificado hasta ejecutar las auditorías automáticas y revisar su cobertura en todos los elementos.
+
+### Evidencias manuales requeridas
+
+Tomar las capturas con el mismo navegador, viewport y disposición, comparando sección completa con sección completa.
+
+1. **`F03-ERR-A11Y-03-codigo-antes.png`** — Mostrar los colores anteriores en las reglas de `styles.css` obtenidas del commit base de F03 (`git show d5f0d7a:css/styles.css`).
+2. **`F03-ERR-A11Y-03-codigo-despues.png`** — Mostrar el comentario histórico `ERR-A11Y-03` y los nuevos overrides limitados a `.intro`.
+3. **`F03-ERR-A11Y-03-rutas-antes.png`** — Captura real previa de la sección Rutas, con kicker, eyebrow y tres accesos visibles. No reconstruir una captura anterior; indicar si no se dispone de ella.
+4. **`F03-ERR-A11Y-03-rutas-despues.png`** — Captura de la misma sección después del cambio, con igual viewport y todos los textos afectados legibles en el estado normal.
+5. **`F03-ERR-A11Y-03-rutas-hover-despues.png`** — Captura del enlace de ruta bajo hover, mostrando el fondo hover y sus textos; complementarla con la medición de contraste del color renderizado.
+6. **`F03-ERR-A11Y-03-auditoria-despues.png`** — Capturar los resultados reales posteriores de axe/Lighthouse para la sección, después de volver a ejecutar las herramientas.
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F03-ERR-A11Y-03-codigo-antes.png` aquí. Debe mostrar las declaraciones originales y sus colores.
+
+> **Pendiente:** insertar `F03-ERR-A11Y-03-codigo-despues.png` aquí. Debe mostrar comentario histórico y overrides de `.intro`.
+
+> **Pendiente:** insertar `F03-ERR-A11Y-03-rutas-antes.png` aquí. Debe ser una captura previa real; si no existe, señalarlo.
+
+> **Pendiente:** insertar `F03-ERR-A11Y-03-rutas-despues.png` aquí. Debe mostrar la misma sección y viewport tras la implementación.
+
+> **Pendiente:** insertar `F03-ERR-A11Y-03-rutas-hover-despues.png` aquí. Debe mostrar uno de los enlaces en estado hover; la medición inspeccionada en los tres fue 4,76:1, pero todavía debe incorporarse la captura real.
+
+> **Pendiente:** insertar `F03-ERR-A11Y-03-auditoria-despues.png` aquí. Debe mostrar los resultados posteriores reales de axe/Lighthouse.
+
 ## Unidades pendientes
 
-Las unidades posteriores a F02 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+Las unidades posteriores a F03 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.

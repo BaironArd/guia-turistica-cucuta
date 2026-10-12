@@ -84,6 +84,12 @@ h1, h2, p { margin-top: 0; }
 .section-kicker > span:first-child { color: #a96843; }
 .kicker-line { width: 28px; height: 1px; background: #c6cec5; }
 .intro-copy { max-width: 400px; }
+/* ERR-A11Y-03: En .intro los valores heredados (#76847a, #a96843, #73867b, #829087 y #7b867f) quedaban bajo 4.5:1; estas reglas los sustituyen solo en rutas. */
+/* ERR-A11Y-03 Código anterior (histórico; no ejecutar): .section-kicker { color: #76847a; } .section-kicker > span:first-child { color: #a96843; } .eyebrow { color: #73867b; } .route-number { color: #829087; } .route-copy small { color: #7b867f; } */
+.intro .section-kicker { color: #626f68; }
+.intro .section-kicker > span:first-child { color: #626f68; }
+.intro-copy > .eyebrow { color: #626f68; }
+.intro .route-number, .intro .route-copy small { color: #626f68; }
 h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5vw, 53px); font-weight: 600; letter-spacing: -.04em; line-height: 1.1; }
 .intro h2 em, .section-heading h2 em, .about h2 em { color: #728b6c; }
 .intro-copy > p:not(.eyebrow), .about-copy > p:not(.eyebrow) { color: #66746c; font-size: 14px; line-height: 1.9; }
