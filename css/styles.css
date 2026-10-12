@@ -126,6 +126,14 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .search-box input::placeholder { color: #87938c; }
 .search-box kbd { display: grid; min-width: 19px; height: 20px; place-items: center; color: #738078; border: 1px solid #dbe0d8; border-radius: 2px; background: #f8f8f4; font-family: var(--sans); font-size: 10px; }
 .result-status { min-height: 18px; margin: 18px 0 3px; color: #718078; font-size: 11px; }
+/* ERR-A11Y-04 Código anterior (histórico; no ejecutar): .section-kicker { color: #76847a; } .section-kicker > span:first-child { color: #a96843; } .eyebrow { color: #73867b; } .section-heading-note { color: #68766e; } .filter-button { color: #68766e; } .result-status { color: #718078; } */
+/* ERR-A11Y-04: Estos colores daban ratios de 3.38:1 a 4.17:1 sobre #f1f0e9; el override queda limitado al explorador y mantiene el filtro seleccionado sin cambios. */
+.destinations .section-heading .section-kicker { color: #5f6d65; }
+.destinations .section-heading .section-kicker > span:first-child { color: #5f6d65; }
+.destinations .section-heading .eyebrow,
+.destinations .section-heading-note,
+.destinations .result-status { color: #5f6d65; }
+.destinations .filter-button:not(.is-selected) { color: #5f6d65; }
 .destination-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; }
 .destination-card { min-width: 0; overflow: hidden; background: var(--paper); box-shadow: 0 8px 24px rgba(24, 51, 46, .045); animation: card-in .35s both; }
 @keyframes card-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

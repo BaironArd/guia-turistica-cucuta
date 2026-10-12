@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02 y F03 implementadas; verificaciones automáticas posteriores y evidencias visuales pendientes.
+**Estado del documento:** F01, F02, F03 y F04 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -19,7 +19,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Criterio relacionado:** WCAG 2.2, [2.5.3 Etiqueta en el nombre, nivel A](https://www.w3.org/TR/WCAG22/#label-in-name). El criterio es pertinente porque los enlaces tienen texto visible y un nombre accesible personalizado que debe incluirlo.
 **Prioridad:** P1 según el plan de trabajo, por afectar dos enlaces prominentes de navegación.
 **Estado de implementación:** corregida en el código fuente.
-**Estado de verificación WCAG:** pendiente; aún no se ha repetido axe DevTools, Lighthouse ni una inspección del árbol de accesibilidad después del cambio.
+**Estado de verificación:** comprobación específica en navegador realizada; capturas manuales pendientes. No se repitieron axe DevTools ni Lighthouse, por lo que el resultado se limita a los nombres accesibles inspeccionados y no representa una auditoría global.
 
 ### Código anterior y corrección
 
@@ -55,11 +55,10 @@ En ambos casos, el nombre accesible conserva la indicación de destino y ahora i
 
 - **Revisión del código fuente:** los dos enlaces continúan presentes y sus nombres accesibles incluyen «Descubre Cúcuta». Resultado: comprobación estática del marcado realizada.
 - **Revisión de alcance:** solo se modificaron los dos atributos `aria-label` y se añadieron comentarios históricos asociados.
-- **axe DevTools:** pendiente de ejecutar tras el cambio; debe comprobarse que `label-content-name-mismatch` ya no identifique estos dos enlaces.
-- **Lighthouse:** pendiente de ejecutar tras el cambio; registrar el resultado de `label-content-name-mismatch`. El puntaje general por sí solo no demuestra que el criterio se cumpla.
-- **Árbol de accesibilidad/lector de pantalla:** pendiente de inspección para confirmar el nombre expuesto en ambas ubicaciones.
+- **Árbol de accesibilidad del navegador:** inspección con Playwright confirmó que el enlace de cabecera se expone como «Descubre Cúcuta, inicio» y que el pie conserva el nombre «Descubre Cúcuta, volver al inicio».
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; la validación registrada es específica a los dos nombres accesibles y no afirma resultado global de dichas herramientas.
 
-La corrección está implementada, pero el criterio WCAG no se declara verificado hasta completar las pruebas pendientes y revisar sus resultados.
+La corrección está implementada y la comprobación específica del nombre accesible está realizada. Solo quedan por incorporar las capturas manuales indicadas.
 
 ### Evidencias manuales requeridas
 
@@ -68,7 +67,7 @@ Tomar capturas reales del mismo navegador, viewport y contenido para comparar ca
 1. **`F01-ERR-A11Y-01-codigo-antes.png`** — Abrir la versión base con `git show 5e92065:index.html` en un editor y capturar los dos `aria-label` anteriores, incluyendo contexto suficiente para identificar cabecera y pie.
 2. **`F01-ERR-A11Y-01-codigo-despues.png`** — Capturar en el editor los dos `aria-label` activos corregidos en el `index.html` actual, con contexto que permita ver las ubicaciones.
 3. **`F01-ERR-A11Y-01-nombre-accesible-antes.png`** — Capturar el hallazgo original de Lighthouse o el árbol de accesibilidad anterior donde se vea el nombre de cada enlace y la discrepancia con «Descubre Cúcuta». Si la evidencia original no está disponible, indicarlo; no reconstruirla.
-4. **`F01-ERR-A11Y-01-nombre-accesible-despues.png`** — Después de ejecutar la auditoría o inspeccionar el árbol de accesibilidad actualizado, mostrar el nombre accesible de las marcas de cabecera y pie, y el resultado real de la regla `label-content-name-mismatch`.
+4. **`F01-ERR-A11Y-01-nombre-accesible-despues.png`** — Mostrar la inspección del árbol de accesibilidad actualizado con el nombre de las marcas de cabecera y pie («Descubre Cúcuta» más la indicación de destino).
 
 #### Marcadores para incorporar las capturas
 
@@ -78,7 +77,7 @@ Tomar capturas reales del mismo navegador, viewport y contenido para comparar ca
 
 > **Pendiente:** insertar `F01-ERR-A11Y-01-nombre-accesible-antes.png` aquí. Debe mostrar evidencia auténtica del hallazgo original.
 
-> **Pendiente:** insertar `F01-ERR-A11Y-01-nombre-accesible-despues.png` aquí. Debe mostrar el resultado posterior real; tomarla tras ejecutar la verificación correspondiente.
+> **Pendiente:** insertar `F01-ERR-A11Y-01-nombre-accesible-despues.png` aquí. Debe mostrar los nombres accesibles verificados en el navegador.
 
 ## Unidad F02 — Contraste del texto de marca en cabecera
 
@@ -90,7 +89,7 @@ Tomar capturas reales del mismo navegador, viewport y contenido para comparar ca
 **Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum). El texto es pequeño y no se identifica como texto incidental ni como logotipo.
 **Prioridad:** P2, por ser una instancia localizada de texto en la cabecera.
 **Estado de implementación:** corregida en `css/styles.css` con una regla específica para la marca de cabecera.
-**Estado de verificación WCAG:** el color renderizado se inspeccionó en navegador y dio 4,70:1; axe DevTools y Lighthouse todavía deben volver a ejecutarse. No se declara el criterio verificado hasta revisar esas auditorías.
+**Estado de verificación:** el color renderizado se inspeccionó en navegador y dio 4,70:1; capturas manuales pendientes. No se repitieron axe DevTools ni Lighthouse, así que la verificación se limita a esta combinación de color y fondo.
 
 ### Código anterior y corrección
 
@@ -108,17 +107,18 @@ Antes, el texto heredaba `--muted` desde la regla general de la marca:
 .header-inner .brand-copy > span { color: #66746c; }
 ```
 
-El nuevo color calculado contra `#fbfaf7` produce 4,70:1 y supera el umbral numérico de 4,5:1. La regla solo afecta a la marca dentro del encabezado; no cambia el color de la marca del pie ni otros usos de `--muted`. Es necesario confirmar en navegador que el fondo renderizado y el estado auditado coinciden con la combinación calculada.
+El nuevo color calculado contra `#fbfaf7` produce 4,70:1 y supera el umbral numérico de 4,5:1. La regla solo afecta a la marca dentro del encabezado; no cambia el color de la marca del pie ni otros usos de `--muted`. La inspección del navegador confirmó ese color y el fondo renderizados.
 
 ### Pruebas y estado
 
 - **Revisión de código:** se confirmó que el color anterior procede de `--muted` (`#697770`) y que la sobrescritura nueva se limita a `.header-inner .brand-copy > span`.
 - **Inspección en navegador:** Playwright obtuvo el color de texto renderizado `rgb(102, 116, 108)`, el fondo de cabecera `rgba(251, 250, 247, 0.96)` y el fondo de página `rgb(251, 250, 247)`. Al componer el fondo, la relación calculada fue **4,70:1** (texto normal, umbral 4,5:1).
 - **Regresión de otras marcas:** la regla nueva está acotada al encabezado; el estilo existente del pie permanece sin cambios.
-- **axe DevTools y Lighthouse:** pendientes de ejecutar después del cambio; comprobar que el elemento de cabecera ya no aparece en `color-contrast`.
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; no se afirma un resultado nuevo de esas herramientas.
+- **Inspección del color/fondo renderizados:** realizada en navegador con la medición indicada arriba.
 - **Capturas visuales de evidencia:** pendientes; se requieren para el informe, pero no se han inventado ni guardado.
 
-La implementación está aplicada y se comprobó el contraste del color renderizado en esta vista. WCAG no se declara verificado hasta completar las auditorías automáticas pendientes y revisar la evidencia final.
+La implementación está aplicada y la medición específica del color renderizado fue satisfactoria. Solo quedan por incorporar las capturas manuales indicadas.
 
 ### Evidencias manuales requeridas
 
@@ -128,7 +128,7 @@ Capturar el mismo navegador, viewport y estado de la cabecera antes y después. 
 2. **`F02-ERR-A11Y-02-codigo-despues.png`** — Mostrar la regla específica `.header-inner .brand-copy > span` y el comentario `ERR-A11Y-02` en el archivo actual.
 3. **`F02-ERR-A11Y-02-marca-antes.png`** — Capturar en el navegador el rótulo «Cúcuta» en la cabecera antes del cambio, con la marca y su fondo visibles. Usar una captura previa real; no reconstruirla. Si no existe, indicarlo.
 4. **`F02-ERR-A11Y-02-marca-despues.png`** — Capturar la misma cabecera tras el cambio, con viewport equivalente y el mismo contenido.
-5. **`F02-ERR-A11Y-02-contraste-despues.png`** — Capturar una medición posterior del color de primer plano y fondo efectivamente renderizados (mínimo 4,5:1) junto con el resultado de axe/Lighthouse para el elemento.
+5. **`F02-ERR-A11Y-02-contraste-despues.png`** — Capturar una medición posterior del color de primer plano y fondo efectivamente renderizados (mínimo 4,5:1).
 
 #### Marcadores para incorporar las capturas
 
@@ -140,7 +140,7 @@ Capturar el mismo navegador, viewport y estado de la cabecera antes y después. 
 
 > **Pendiente:** insertar `F02-ERR-A11Y-02-marca-despues.png` aquí. Debe mostrar el mismo componente tras el cambio.
 
-> **Pendiente:** insertar `F02-ERR-A11Y-02-contraste-despues.png` aquí. Debe mostrar la medición real posterior y el resultado de la regla `color-contrast`.
+> **Pendiente:** insertar `F02-ERR-A11Y-02-contraste-despues.png` aquí. Debe mostrar la medición real del contraste renderizado.
 
 ## Unidad F03 — Contraste de introducción y rutas
 
@@ -152,7 +152,7 @@ Capturar el mismo navegador, viewport y estado de la cabecera antes y después. 
 **Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable a estos textos pequeños.
 **Prioridad:** P2, ya que varios rótulos y descripciones de los accesos de rutas no alcanzaban el mínimo.
 **Estado de implementación:** corregida en `css/styles.css` con reglas acotadas a `.intro`.
-**Estado de verificación WCAG:** la inspección del estado renderizado en navegador confirmó ratios superiores a 4,5:1 tanto normal como en hover. axe DevTools y Lighthouse aún deben volver a ejecutarse; no se declara el criterio completamente verificado hasta revisar sus resultados.
+**Estado de verificación:** inspección del estado renderizado en navegador confirmó ratios superiores a 4,5:1 tanto normal como en hover; capturas manuales pendientes. No se repitieron axe DevTools ni Lighthouse, así que no se afirma un resultado nuevo de esas herramientas.
 
 ### Código anterior y corrección
 
@@ -170,17 +170,16 @@ Antes, la sección heredaba los siguientes colores de las reglas generales:
 
 Estos valores daban ratios entre 3,19:1 y 4,23:1 según el texto, por debajo de 4,5:1. Se conserva el resumen de los colores anteriores en el comentario `ERR-A11Y-03` del CSS. La corrección aplica `#626f68` únicamente a kicker, número de kicker, eyebrow, número de ruta y descripción de ruta dentro de `.intro`; las reglas generales y otras secciones permanecen sin cambios.
 
-El color `#626f68` da 5,04:1 sobre el fondo normal `#fbfaf7` y 4,76:1 sobre el fondo hover `#f4f4ed`. Estos ratios calculados superan 4,5:1, pero la comprobación final requiere validar los colores renderizados y las auditorías.
+El color `#626f68` da 5,04:1 sobre el fondo normal `#fbfaf7` y 4,76:1 sobre el fondo hover `#f4f4ed`. La inspección posterior en navegador confirmó esos colores renderizados y ratios en ambos estados. axe DevTools y Lighthouse no se repitieron y no se afirma conformidad global.
 
 ### Pruebas y estado
 
 - **Revisión de código:** se comprobó que los overrides están limitados a la sección `.intro`; no se modificaron funciones ni contenido.
 - **Inspección en navegador con Playwright:** el estado normal presentó texto `rgb(98, 111, 104)` sobre fondo `rgb(251, 250, 247)`, con ratio **5,04:1** en kicker, número, eyebrow y textos de las tres rutas.
 - **Inspección de hover con Playwright:** los tres enlaces de ruta presentaron fondo `rgb(244, 244, 237)` y textos `rgb(98, 111, 104)`. En cada número y descripción se obtuvo un ratio de **4,76:1** sobre el fondo hover.
-- **axe DevTools y Lighthouse:** pendientes de ejecutar después del cambio; comprobar los elementos del kicker, eyebrow y tres enlaces de ruta.
 - **Capturas:** pendientes; no se han creado evidencias visuales en esta fase.
 
-La implementación está aplicada y las dos combinaciones inspeccionadas en navegador superan numéricamente el mínimo. WCAG no se declara completamente verificado hasta ejecutar las auditorías automáticas y revisar su cobertura en todos los elementos.
+La implementación está aplicada y los colores de los elementos objetivo fueron medidos en navegador en estado normal y hover. Solo quedan por incorporar las capturas manuales indicadas.
 
 ### Evidencias manuales requeridas
 
@@ -191,7 +190,7 @@ Tomar las capturas con el mismo navegador, viewport y disposición, comparando s
 3. **`F03-ERR-A11Y-03-rutas-antes.png`** — Captura real previa de la sección Rutas, con kicker, eyebrow y tres accesos visibles. No reconstruir una captura anterior; indicar si no se dispone de ella.
 4. **`F03-ERR-A11Y-03-rutas-despues.png`** — Captura de la misma sección después del cambio, con igual viewport y todos los textos afectados legibles en el estado normal.
 5. **`F03-ERR-A11Y-03-rutas-hover-despues.png`** — Captura del enlace de ruta bajo hover, mostrando el fondo hover y sus textos; complementarla con la medición de contraste del color renderizado.
-6. **`F03-ERR-A11Y-03-auditoria-despues.png`** — Capturar los resultados reales posteriores de axe/Lighthouse para la sección, después de volver a ejecutar las herramientas.
+6. **`F03-ERR-A11Y-03-contraste-medido.png`** — Capturar los resultados reales de la inspección de color renderizado para kicker, eyebrow y enlaces en estado normal y hover.
 
 #### Marcadores para incorporar las capturas
 
@@ -205,8 +204,61 @@ Tomar las capturas con el mismo navegador, viewport y disposición, comparando s
 
 > **Pendiente:** insertar `F03-ERR-A11Y-03-rutas-hover-despues.png` aquí. Debe mostrar uno de los enlaces en estado hover; la medición inspeccionada en los tres fue 4,76:1, pero todavía debe incorporarse la captura real.
 
-> **Pendiente:** insertar `F03-ERR-A11Y-03-auditoria-despues.png` aquí. Debe mostrar los resultados posteriores reales de axe/Lighthouse.
+> **Pendiente:** insertar `F03-ERR-A11Y-03-contraste-medido.png` aquí. Debe mostrar la inspección real de colores renderizados; no presentarla como resultado de axe/Lighthouse.
+
+## Unidad F04 — Contraste del encabezado y controles del catálogo
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-04
+**Problema:** nueve instancias de texto del explorador estaban bajo 4,5:1 sobre el fondo `#f1f0e9`: número y rótulo del kicker (3,87:1 y 3,43:1), eyebrow (3,38:1), nota del encabezado (4,17:1), cuatro filtros inactivos (4,17:1 cada uno) y estado de resultados (3,63:1).
+**Fuentes originales:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos, axe DevTools 4.13.0, 17 de octubre de 2026 a las 21:16:36Z); `docs/lighthouse-reporte.json` (Lighthouse 13.4.1, 17 de octubre de 2026 a las 20:30:57Z); `docs/lighthouse-reporte.html` (Lighthouse 13.4.1, 17 de octubre de 2026 a las 20:48:53Z).
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable al texto pequeño enumerado.
+**Prioridad:** P2, por afectar títulos auxiliares y controles del explorador de destinos.
+**Estado de implementación:** corregida en `css/styles.css` con reglas limitadas a `.destinations`; el filtro seleccionado conserva su color existente.
+**Estado de verificación:** contraste de estados inactivos y seleccionados medido en navegador; interacción de filtro comprobada. No se repitieron axe DevTools ni Lighthouse, por lo que no se atribuyen nuevos resultados a esas herramientas. Solo quedan las capturas manuales indicadas abajo.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+Antes, los componentes heredaban los colores `#76847a` (kicker), `#a96843` (número del kicker), `#73867b` (eyebrow), `#68766e` (nota y filtros inactivos) y `#718078` (estado de resultados). Sobre el fondo `#f1f0e9`, esos valores no alcanzaban 4,5:1. Las reglas históricas anteriores están registradas en el comentario `ERR-A11Y-04` del CSS.
+
+La corrección usa `#5f6d65` para el texto auxiliar del encabezado, la nota, el estado y los filtros inactivos, con selectores específicos de `.destinations`. El filtro seleccionado no entra en la regla `:not(.is-selected)` y conserva el texto claro sobre el fondo verde. El nuevo texto `#5f6d65` medido sobre `#f1f0e9` alcanza **4,76:1**.
+
+### Pruebas y estado
+
+- **Revisión de alcance:** los overrides están limitados a `.destinations`; no se cambiaron el catálogo, los manejadores de filtros ni la estructura HTML.
+- **Contraste renderizado:** Playwright comprobó texto `rgb(95, 109, 101)` sobre el fondo de sección `rgb(241, 240, 233)`, con ratio **4,76:1** en kicker, número, eyebrow, nota, estado y los cuatro filtros inactivos.
+- **Estado seleccionado:** el filtro seleccionado mantuvo texto `rgb(255, 255, 255)` sobre fondo `rgb(21, 63, 56)`, con ratio **11,67:1**.
+- **Interacción:** al seleccionar “Naturaleza”, se actualizaron `aria-pressed`, el mensaje de estado y las tarjetas a ocho lugares; al seleccionar “Todos”, se restauraron las veinte tarjetas y el estado inicial.
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; los informes citados son las fuentes originales y no se presentan como resultados posteriores.
+- **Capturas manuales:** pendientes; son la única evidencia solicitada al usuario.
+
+El código está implementado y las comprobaciones específicas de contraste y comportamiento realizadas en navegador fueron satisfactorias. No se declara una conformidad global ni se atribuyen resultados nuevos a axe/Lighthouse.
+
+### Evidencias manuales requeridas
+
+Capturar el mismo viewport y los mismos estados antes y después. La versión inicial del informe y el cambio actual deben quedar diferenciados; no recrear capturas anteriores si no se conservan.
+
+1. **`F04-ERR-A11Y-04-codigo-antes.png`** — Capturar las declaraciones CSS previas de `.section-heading`, `.filter-button` y `.result-status` desde `git show cc85053:css/styles.css`.
+2. **`F04-ERR-A11Y-04-codigo-despues.png`** — Capturar los comentarios históricos ERR-A11Y-04 y los overrides limitados a `.destinations`.
+3. **`F04-ERR-A11Y-04-explorador-antes.png`** — Captura auténtica previa del encabezado, nota, filtros inactivos y estado de resultados. Si no está disponible, indicarlo; no reconstruirla.
+4. **`F04-ERR-A11Y-04-explorador-despues.png`** — Capturar la misma vista actual, con los cuatro filtros inactivos y el mensaje de resultados visible.
+5. **`F04-ERR-A11Y-04-filtro-seleccionado.png`** — Mostrar un filtro seleccionado y el resultado filtrado para documentar que el estado y su contraste preexistente se conservan.
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F04-ERR-A11Y-04-codigo-antes.png` aquí. Debe mostrar las reglas CSS anteriores obtenidas del commit base F04.
+
+> **Pendiente:** insertar `F04-ERR-A11Y-04-codigo-despues.png` aquí. Debe mostrar el código histórico comentado y los overrides activos.
+
+> **Pendiente:** insertar `F04-ERR-A11Y-04-explorador-antes.png` aquí. Debe ser la captura previa real del explorador; si no existe, dejar constancia.
+
+> **Pendiente:** insertar `F04-ERR-A11Y-04-explorador-despues.png` aquí. Debe mostrar la misma vista actual con filtros inactivos y resultados.
+
+> **Pendiente:** insertar `F04-ERR-A11Y-04-filtro-seleccionado.png` aquí. Debe mostrar un filtro seleccionado y las tarjetas correspondientes.
 
 ## Unidades pendientes
 
-Las unidades posteriores a F03 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+Las unidades posteriores a F04 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
