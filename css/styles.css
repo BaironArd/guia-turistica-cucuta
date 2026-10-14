@@ -151,6 +151,11 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .card-details, .card-map { padding: 4px 0; color: var(--forest); border: 0; background: none; cursor: pointer; font-size: 10px; font-weight: 700; text-decoration: none; }
 .card-details:hover, .card-map:hover { color: #a45f3a; text-decoration: underline; text-underline-offset: 3px; }
 .card-map { display: inline-flex; align-items: center; gap: 5px; color: #77847b; }
+/* ERR-A11Y-05 Código anterior (histórico; no ejecutar): .card-location { color: #839087; } .card-content > p:not(.card-location) { color: #6c7971; } .card-map { color: #77847b; } */
+/* ERR-A11Y-05: los colores anteriores daban 3.19:1, 4.36:1 y 3.74:1; se oscurece solo el texto auxiliar y el enlace en reposo, manteniendo el estilo hover. */
+.destination-card .card-location,
+.destination-card .card-content > p:not(.card-location),
+.destination-card .card-map:not(:hover) { color: #5f6d65; }
 .empty-state { margin: 34px 0 0; padding: 28px; color: #68766e; border: 1px dashed #bac6ba; text-align: center; }
 
 /* Sección de mapas: texto y representación gráfica decorativa compuesta en CSS. */

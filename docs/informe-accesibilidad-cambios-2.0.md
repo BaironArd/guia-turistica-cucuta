@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02, F03 y F04 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
+**Estado del documento:** F01, F02, F03, F04 y F05 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -259,6 +259,61 @@ Capturar el mismo viewport y los mismos estados antes y después. La versión in
 
 > **Pendiente:** insertar `F04-ERR-A11Y-04-filtro-seleccionado.png` aquí. Debe mostrar un filtro seleccionado y las tarjetas correspondientes.
 
+## Unidad F05 — Contraste del texto auxiliar en tarjetas de destinos
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-05
+**Problema:** cada una de las veinte tarjetas de destinos presenta tres elementos de texto bajo el mínimo de 4,5:1 sobre el fondo `#fbfaf7`: ubicación (`#839087`, 3,19:1), descripción (`#6c7971`, 4,36:1) y enlace “Mapa” en reposo (`#77847b`, 3,74:1). Son 60 instancias en total, agrupadas en tres causas de estilo compartidas.
+**Fuentes originales:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `color-contrast`, 60 instancias correspondientes a estas tres clases de elemento); `docs/lighthouse-reporte.json` y `docs/lighthouse-reporte.html` (hallazgos de contraste de la auditoría original).
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable al texto pequeño de ubicación, descripción y enlace.
+**Prioridad:** P2, por repetirse el mismo problema en las veinte tarjetas e incluir el enlace de acción.
+**Estado de implementación:** corregida en `css/styles.css` mediante una regla acotada a `.destination-card`; se conserva el color del enlace al pasar el puntero.
+**Estado de verificación:** mediciones renderizadas en navegador e inspección de estados normal y hover realizadas; capturas manuales pendientes. No se repitieron axe DevTools ni Lighthouse, por lo que no se atribuyen resultados posteriores a esas herramientas.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+Las declaraciones anteriores usaban `#839087` en `.card-location`, `#6c7971` en la descripción y `#77847b` en `.card-map`. Quedaron consignadas como referencia histórica junto a la corrección. La nueva regla limitada a las tarjetas aplica `#5f6d65` a ubicación, descripción y enlace de mapa cuando no está bajo hover. Sobre el fondo `#fbfaf7`, el nuevo color da **5,21:1**. El hover conserva la regla existente `#a45f3a`, con contraste de **4,70:1**.
+
+No se modificaron datos, estructura HTML, enlaces ni manejadores de eventos.
+
+### Pruebas y estado
+
+- **Revisión del alcance:** los selectores nuevos se restringen a `.destination-card` y a los tres tipos de texto identificados en los informes; no se cambiaron funciones.
+- **Contraste renderizado:** comprobación con Playwright de ubicaciones, descripciones y enlaces de las veinte tarjetas en estado normal; texto `rgb(95, 109, 101)` sobre fondo `rgb(251, 250, 247)`, ratio **5,21:1**.
+- **Estado hover del enlace:** inspección con Playwright del enlace de mapa; conserva el color `#a45f3a` con ratio **4,70:1** sobre el mismo fondo.
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; no se afirma que los hallazgos de la auditoría original hayan desaparecido en una nueva ejecución.
+- **Capturas manuales:** pendientes; son la única evidencia solicitada al usuario.
+
+La implementación y las mediciones específicas de contraste están realizadas. No se declara conformidad global WCAG.
+
+### Evidencias manuales requeridas
+
+Tomar imágenes reales con el mismo navegador, viewport y tarjetas comparables. Si no existe una captura previa auténtica, dejarlo indicado sin reconstruir el estado anterior.
+
+1. **`F05-ERR-A11Y-05-codigo-antes.png`** — Mostrar las declaraciones anteriores desde `git show 35bad14:css/styles.css`.
+2. **`F05-ERR-A11Y-05-codigo-despues.png`** — Mostrar el comentario histórico ERR-A11Y-05 y los overrides activos, incluidos los selectores que conservan el hover.
+3. **`F05-ERR-A11Y-05-tarjetas-antes.png`** — Captura original previa de las tarjetas que muestre ubicación, descripción y enlace de mapa; si no se conserva, señalarlo.
+4. **`F05-ERR-A11Y-05-tarjetas-despues.png`** — Capturar tarjetas actuales con ubicación, descripción y enlace de mapa en estado normal.
+5. **`F05-ERR-A11Y-05-enlace-mapa-hover.png`** — Capturar el enlace “Mapa” bajo hover, manteniendo visible la tarjeta y el estilo hover.
+6. **`F05-ERR-A11Y-05-contraste-medido.png`** — Mostrar los colores efectivamente renderizados y la medición de 5,21:1 (normal) y 4,70:1 (hover).
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F05-ERR-A11Y-05-codigo-antes.png` aquí. Debe mostrar las reglas originales recuperadas del commit base F05.
+
+> **Pendiente:** insertar `F05-ERR-A11Y-05-codigo-despues.png` aquí. Debe mostrar la referencia histórica y los selectores activos.
+
+> **Pendiente:** insertar `F05-ERR-A11Y-05-tarjetas-antes.png` aquí. Debe ser una captura previa auténtica; si no existe, dejar constancia.
+
+> **Pendiente:** insertar `F05-ERR-A11Y-05-tarjetas-despues.png` aquí. Debe mostrar el mismo tipo de tarjetas tras el cambio.
+
+> **Pendiente:** insertar `F05-ERR-A11Y-05-enlace-mapa-hover.png` aquí. Debe mostrar el estado hover real del enlace.
+
+> **Pendiente:** insertar `F05-ERR-A11Y-05-contraste-medido.png` aquí. Debe mostrar las mediciones realizadas en los estados normal y hover.
+
 ## Unidades pendientes
 
-Las unidades posteriores a F04 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+Las unidades posteriores a F05 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
