@@ -162,6 +162,8 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .map-section { overflow: hidden; color: var(--white); background: var(--forest); }
 .map-layout { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(50px, 10vw, 130px); }
 .section-kicker-light { margin-bottom: 34px; color: #c4d0c6; }
+/* ERR-A11Y-06 Código anterior (histórico; no ejecutar): el primer span heredaba #a96843 y daba 2.63:1 sobre el fondo del mapa. */
+.map-section .section-kicker-light > span:first-child { color: #c4d0c6; }
 .section-kicker-light .kicker-line { background: #668176; }
 .map-copy .eyebrow { color: #b2c4b2; }
 .map-copy h2 { margin-bottom: 21px; font-size: clamp(43px, 5vw, 58px); }

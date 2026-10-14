@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02, F03, F04 y F05 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
+**Estado del documento:** F01, F02, F03, F04, F05 y F06 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -314,6 +314,57 @@ Tomar imágenes reales con el mismo navegador, viewport y tarjetas comparables. 
 
 > **Pendiente:** insertar `F05-ERR-A11Y-05-contraste-medido.png` aquí. Debe mostrar las mediciones realizadas en los estados normal y hover.
 
+## Unidad F06 — Contraste del número en el kicker de mapas
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-06
+**Problema:** el número decorativo del kicker de la sección de mapas se renderizaba en `#a96843` sobre el fondo `#153f38`, con contraste de **2,63:1**, inferior al mínimo para texto pequeño.
+**Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `color-contrast`, selector `.section-kicker-light > span:nth-child(1)`). Lighthouse no enumeró este selector entre sus nodos fallidos; la relación se conserva atribuida a axe.
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum).
+**Prioridad:** P2; se trata de un texto pequeño aislado dentro del encabezado de una sección.
+**Estado de implementación:** corregida en `css/styles.css` con una regla exclusiva de `.map-section`.
+**Estado de verificación:** color y fondo renderizados inspeccionados en navegador; capturas manuales pendientes. axe DevTools y Lighthouse no se repitieron tras el cambio.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+El primer `span` heredaba el color de acento `#a96843` de la regla global `.section-kicker > span:first-child`. Esa regla global sigue activa para las demás secciones; se añadió un override específico de mapas que utiliza el color claro existente `#c4d0c6`. El color activo mantiene la identidad visual clara del kicker y eleva el contraste sobre el fondo `#153f38`.
+
+No se modificaron contenido, estructura ni comportamiento. Otros textos gráficos de la ilustración del mapa no forman parte de este cambio.
+
+### Pruebas y estado
+
+- **Revisión del alcance:** el nuevo selector está limitado a `.map-section .section-kicker-light`; no se cambió la regla global ni otras secciones.
+- **Contraste renderizado:** Playwright confirmó texto `rgb(196, 208, 198)` sobre fondo `rgb(21, 63, 56)`, con ratio **7,32:1**.
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; no se atribuyen resultados posteriores a esas herramientas.
+- **Capturas manuales:** pendientes; son la única evidencia visual solicitada al usuario.
+
+La implementación y la medición específica se completaron. No se declara conformidad global WCAG.
+
+### Evidencias manuales requeridas
+
+Tomar capturas reales con el mismo viewport y encuadre de la sección de mapas. Si la captura previa no se conserva, indicarlo en lugar de reconstruirla.
+
+1. **`F06-ERR-A11Y-06-codigo-antes.png`** — Mostrar el estilo global del kicker antes del override, recuperado con `git show bb27957:css/styles.css`.
+2. **`F06-ERR-A11Y-06-codigo-despues.png`** — Mostrar el comentario histórico y el selector específico `.map-section`.
+3. **`F06-ERR-A11Y-06-mapas-antes.png`** — Captura previa auténtica de la sección de mapas y del kicker.
+4. **`F06-ERR-A11Y-06-mapas-despues.png`** — Captura de la misma sección tras el cambio.
+5. **`F06-ERR-A11Y-06-contraste-medido.png`** — Mostrar los colores renderizados y la medición posterior de contraste.
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F06-ERR-A11Y-06-codigo-antes.png` aquí. Debe mostrar la regla global anterior.
+
+> **Pendiente:** insertar `F06-ERR-A11Y-06-codigo-despues.png` aquí. Debe mostrar el override limitado a mapas.
+
+> **Pendiente:** insertar `F06-ERR-A11Y-06-mapas-antes.png` aquí. Debe ser una captura previa auténtica; si no existe, dejar constancia.
+
+> **Pendiente:** insertar `F06-ERR-A11Y-06-mapas-despues.png` aquí. Debe mostrar el kicker corregido en el mismo encuadre.
+
+> **Pendiente:** insertar `F06-ERR-A11Y-06-contraste-medido.png` aquí. Debe mostrar los colores renderizados y la medición real.
+
 ## Unidades pendientes
 
-Las unidades posteriores a F05 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+Las unidades posteriores a F06 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
