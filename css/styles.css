@@ -200,6 +200,11 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .about-stats > div { display: grid; gap: 2px; padding: 15px 0; border-bottom: 1px solid var(--line); }
 .about-stats strong { color: var(--forest); font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1.1; }
 .about-stats span { color: #78857d; font-size: 10px; }
+/* ERR-A11Y-07 Código anterior (histórico; no ejecutar): en “Acerca del proyecto” se heredaban #a96843, #76847a, #73867b y #78857d, todos bajo 4.5:1. */
+.about-copy .section-kicker > span:first-child,
+.about-copy .section-kicker > span:nth-child(3),
+.about-copy .eyebrow,
+.about-stats span { color: #5f6d65; }
 
 /* Pie de página con navegación secundaria y metadatos del proyecto. */
 .site-footer { color: #e6ede6; background: #102e29; }

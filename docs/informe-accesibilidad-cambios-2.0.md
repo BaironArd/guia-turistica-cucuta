@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02, F03, F04, F05 y F06 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
+**Estado del documento:** F01, F02, F03, F04, F05, F06 y F07 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -365,6 +365,58 @@ Tomar capturas reales con el mismo viewport y encuadre de la sección de mapas. 
 
 > **Pendiente:** insertar `F06-ERR-A11Y-06-contraste-medido.png` aquí. Debe mostrar los colores renderizados y la medición real.
 
+## Unidad F07 — Contraste del kicker y cifras de “Acerca del proyecto”
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-07
+**Problema:** los colores del número del kicker (`#a96843`, 4,23:1), su rótulo (`#76847a`, 3,75:1), el eyebrow (`#73867b`, 3,70:1) y las etiquetas de las cifras (`#78857d`, 3,69:1) no alcanzaban 4,5:1 sobre `#fbfaf7`. Lighthouse registra seis nodos fallidos (los tres rótulos del kicker/eyebrow y tres etiquetas de cifras); axe registra cinco en su export.
+**Fuentes originales:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `color-contrast`, selectores de `.about-copy` y `.about-stats`); `docs/lighthouse-reporte.json` y `docs/lighthouse-reporte.html` (regla de contraste con seis nodos afectados).
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum).
+**Prioridad:** P2, por afectar seis textos auxiliares del bloque de presentación.
+**Estado de implementación:** corregida en `css/styles.css` mediante selectores limitados a `.about-copy` y `.about-stats`.
+**Estado de verificación:** inspección y medición de colores renderizados en navegador; capturas manuales pendientes. axe DevTools y Lighthouse no se repitieron tras el cambio.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+Los textos afectados heredaban cuatro valores claros de las reglas generales o del bloque de estadísticas. Se conservaron esos valores en el comentario histórico `ERR-A11Y-07`; las reglas globales no se alteraron. Los cuatro tipos de texto de esta sección ahora usan `#5f6d65`, con contraste de **5,21:1** sobre `#fbfaf7`.
+
+No se modificaron el texto, las cifras ni la estructura del componente.
+
+### Pruebas y estado
+
+- **Revisión del alcance:** las reglas nuevas se limitan al kicker y eyebrow de `.about-copy` y a los `span` de `.about-stats`.
+- **Contraste renderizado:** Playwright comprobó el texto `rgb(95, 109, 101)` sobre `rgb(251, 250, 247)`, con ratio **5,21:1** en los elementos afectados.
+- **Regresión visual/funcional:** no se cambiaron contenido, datos ni comportamiento de la sección.
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; no se atribuyen resultados nuevos a esas herramientas.
+- **Capturas manuales:** pendientes; son la única evidencia visual solicitada al usuario.
+
+La implementación y la medición específica se realizaron. No se declara conformidad global WCAG.
+
+### Evidencias manuales requeridas
+
+Usar el mismo viewport y encuadre para las capturas de comparación. La vista previa debe proceder de una captura auténtica si existe; no reconstruirla.
+
+1. **`F07-ERR-A11Y-07-codigo-antes.png`** — Mostrar los colores originales de las reglas generales y de `.about-stats span`, recuperados con `git show 35eaa87:css/styles.css`.
+2. **`F07-ERR-A11Y-07-codigo-despues.png`** — Mostrar el comentario histórico y los nuevos selectores restringidos al bloque “Acerca del proyecto”.
+3. **`F07-ERR-A11Y-07-acerca-antes.png`** — Captura auténtica previa que muestre el kicker, eyebrow y las etiquetas de estadísticas; si no se conserva, indicarlo.
+4. **`F07-ERR-A11Y-07-acerca-despues.png`** — Capturar los mismos elementos después del cambio.
+5. **`F07-ERR-A11Y-07-contraste-medido.png`** — Mostrar la inspección de color/fondo renderizados y el ratio posterior.
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F07-ERR-A11Y-07-codigo-antes.png` aquí. Debe mostrar las declaraciones previas recuperadas del commit base F07.
+
+> **Pendiente:** insertar `F07-ERR-A11Y-07-codigo-despues.png` aquí. Debe mostrar el comentario histórico y los selectores activos.
+
+> **Pendiente:** insertar `F07-ERR-A11Y-07-acerca-antes.png` aquí. Debe ser una captura previa auténtica; si no existe, dejar constancia.
+
+> **Pendiente:** insertar `F07-ERR-A11Y-07-acerca-despues.png` aquí. Debe mostrar los mismos textos tras la corrección.
+
+> **Pendiente:** insertar `F07-ERR-A11Y-07-contraste-medido.png` aquí. Debe mostrar la inspección real de los colores renderizados.
+
 ## Unidades pendientes
 
-Las unidades posteriores a F06 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+Las unidades posteriores a F07 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
