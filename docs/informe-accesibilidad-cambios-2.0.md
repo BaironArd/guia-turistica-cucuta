@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02, F03, F04, F05, F06, F07 y F08 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
+**Estado del documento:** F01, F02, F03, F04, F05, F06, F07, F08 y F09 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -469,6 +469,60 @@ Comparar la etiqueta en el mismo viewport y encuadre; tomar imágenes reales y n
 
 > **Pendiente:** insertar `F08-ERR-A11Y-08-contraste-medido.png` aquí. Debe mostrar la medición realizada para ambos fondos.
 
+## Unidad F09 — Contraste del texto de fallback de imagen
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-09
+**Problema:** el texto del fallback de imagen usaba `#566a5d` sobre un degradado claro y la regla avanzada de axe registró contrastes entre **3,68:1 y 4,20:1**.
+**Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `advanced/text-contrast`, selector `.card-image-wrap > .image-fallback[role="img"]`). El fallback está visible actualmente en una tarjeta del catálogo.
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable al texto visible de 18 px.
+**Prioridad:** P2, porque el mensaje de reemplazo debe seguir siendo legible cuando falta una fotografía.
+**Estado de implementación:** corregida en `css/styles.css`; el estilo compartido cubre el placeholder de tarjeta y el fallback del diálogo.
+**Estado de verificación:** color y degradado computados en navegador; ratios calculados en ambos extremos del degradado. Capturas manuales pendientes. La regla avanzada de axe y Lighthouse no se repitieron tras el cambio.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+El color histórico `#566a5d` se conserva como comentario junto a la regla activa. Se cambió a `#3f5147` sin modificar el degradado, el texto ni la generación del fallback. Contra los extremos del degradado (`#dce4d8` y `#b8c8b3`), el nuevo color obtiene **6,51:1** y **4,82:1**, respectivamente; ambos superan el mínimo 4,5:1.
+
+### Pruebas y estado
+
+- **Fallback visible:** Playwright encontró el mensaje «Fotografía no disponible en esta versión» en una tarjeta y comprobó el estilo aplicado; se verificó también que el diálogo conserva el mismo color CSS compartido.
+- **Contraste:** cálculo sobre ambos extremos del degradado computado: **6,51:1** en `#dce4d8` y **4,82:1** en `#b8c8b3`.
+- **Regresión:** no se cambió `js/main.js`, el texto alternativo, el `role="img"` ni el comportamiento que muestra el fallback.
+- **axe DevTools y Lighthouse:** no se repitieron tras el cambio; no se atribuyen resultados nuevos a esas herramientas.
+- **Capturas manuales:** pendientes; son la única evidencia visual solicitada al usuario.
+
+La corrección y la verificación de contraste específica están realizadas. No se declara conformidad global WCAG.
+
+### Evidencias manuales requeridas
+
+Usar el fallback realmente visible en el navegador, conservando el mismo viewport para antes y después. No recrear el color anterior si no existe captura auténtica.
+
+1. **`F09-ERR-A11Y-09-codigo-antes.png`** — Mostrar la regla histórica `#566a5d` recuperada con `git show 2750104:css/styles.css`.
+2. **`F09-ERR-A11Y-09-codigo-despues.png`** — Mostrar la regla activa `#3f5147` y el comentario ERR-A11Y-09.
+3. **`F09-ERR-A11Y-09-fallback-antes.png`** — Captura auténtica previa del placeholder; si no se conserva, dejar constancia.
+4. **`F09-ERR-A11Y-09-fallback-despues.png`** — Capturar el fallback visible actual en la tarjeta.
+5. **`F09-ERR-A11Y-09-contraste-medido.png`** — Mostrar el color computado y ratios de ambos extremos del degradado.
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F09-ERR-A11Y-09-codigo-antes.png` aquí. Debe mostrar el color original y la regla de fallback.
+
+> **Pendiente:** insertar `F09-ERR-A11Y-09-codigo-despues.png` aquí. Debe mostrar el color nuevo y el comentario histórico.
+
+> **Pendiente:** insertar `F09-ERR-A11Y-09-fallback-antes.png` aquí. Debe ser una captura previa auténtica; si no existe, dejar constancia.
+
+> **Pendiente:** insertar `F09-ERR-A11Y-09-fallback-despues.png` aquí. Debe mostrar el placeholder real tras la corrección.
+
+> **Pendiente:** insertar `F09-ERR-A11Y-09-contraste-medido.png` aquí. Debe incluir el color computado y los dos ratios calculados.
+
+## Evaluación de una heurística de encabezados
+
+axe también registró tres candidatos en `article:nth-child(10|15|19) > .card-content > .card-location` para la regla `advanced/heading-markup`. La inspección del template confirma que `.card-location` contiene la ubicación del lugar en un párrafo, mientras que el nombre del destino es el encabezado `<h3>` de cada tarjeta. La ubicación no actúa como título, por lo que convertirla en encabezado alteraría la jerarquía semántica; estos tres resultados se clasifican como **falsos positivos heurísticos** y no requieren cambio de código.
+
 ## Unidades pendientes
 
-Las unidades posteriores a F08 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+No se han iniciado nuevas correcciones fuera de los hallazgos descritos. La captura WAVE original sigue siendo solo un resumen, sin selectores identificables; no se le atribuyen elementos concretos ni se inventan resultados.

@@ -140,7 +140,8 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .card-image-wrap { position: relative; height: 205px; overflow: hidden; background: #d6ded5; }
 .card-image { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
 .destination-card:hover .card-image { transform: scale(1.045); }
-.image-fallback { display: grid; width: 100%; height: 100%; place-items: center; color: #566a5d; background: linear-gradient(140deg, #dce4d8, #b8c8b3); font-family: var(--serif); font-size: 18px; }
+/* ERR-A11Y-09 Código anterior (histórico; no ejecutar): .image-fallback { display: grid; width: 100%; height: 100%; place-items: center; color: #566a5d; background: linear-gradient(140deg, #dce4d8, #b8c8b3); font-family: var(--serif); font-size: 18px; } */
+.image-fallback { display: grid; width: 100%; height: 100%; place-items: center; color: #3f5147; background: linear-gradient(140deg, #dce4d8, #b8c8b3); font-family: var(--serif); font-size: 18px; }
 .image-fallback[hidden] { display: none; }
 .card-category { position: absolute; bottom: 12px; left: 13px; padding: 5px 9px; color: var(--forest); background: rgba(251, 250, 247, .94); border-radius: 2px; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .card-content { padding: 19px 19px 16px; }
