@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02, F03, F04, F05, F06 y F07 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
+**Estado del documento:** F01, F02, F03, F04, F05, F06, F07 y F08 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -417,6 +417,58 @@ Usar el mismo viewport y encuadre para las capturas de comparación. La vista pr
 
 > **Pendiente:** insertar `F07-ERR-A11Y-07-contraste-medido.png` aquí. Debe mostrar la inspección real de los colores renderizados.
 
+## Unidad F08 — Contraste de la etiqueta “Norte de Santander” en el mapa ilustrativo
+
+### Hallazgo y origen
+
+**ID interno:** ERR-A11Y-08
+**Problema:** la etiqueta visible `.label-two` usaba texto semitransparente `rgba(232, 238, 228, .56)` sobre los tonos oscuros del mapa, con contrastes reportados entre **4,13:1 y 4,30:1**.
+**Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `advanced/text-contrast`, selector `.label-two`). La etiqueta está dentro de `.map-art[aria-hidden="true"]` y es decorativa para tecnologías de asistencia; se corrige igualmente su contraste visual, sin modificar esa semántica.
+**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), considerado para el texto visible. No se atribuye este selector a Lighthouse; no aparece entre los nodos fallidos de su auditoría de contraste.
+**Prioridad:** P3, por ser una etiqueta de apoyo dentro de una ilustración no interactiva y oculta del árbol de accesibilidad.
+**Estado de implementación:** corregida en `css/styles.css`; se aumentó la opacidad del texto para que coincida con la otra etiqueta del mapa.
+**Estado de verificación:** colores computados e inspección del contraste en navegador; capturas manuales pendientes. axe DevTools y Lighthouse no se repitieron tras el cambio.
+
+### Código anterior y corrección
+
+Archivo afectado: [`css/styles.css`](../css/styles.css).
+
+Antes, `.label-two` tenía opacidad `.56`, menor que la etiqueta hermana `.label-one` (`.84`). El valor anterior se conserva en el comentario histórico `ERR-A11Y-08`. El override acotado a `.map-art .label-two` aplica la misma opacidad `.84` que la etiqueta hermana. Sobre Los fondos identificados por axe (`#153f38` y `#174139`), el nuevo color compuesto alcanza **7,48:1** y **7,29:1**, respectivamente.
+
+La ilustración sigue marcada `aria-hidden="true"`; no se añadieron nombres accesibles ni contenido funcional.
+
+### Pruebas y estado
+
+- **Revisión de alcance:** el cambio solo afecta `.map-art .label-two`; la etiqueta hermana y el resto de la ilustración permanecen sin cambios.
+- **Contraste:** inspección con Playwright del color computado y cálculo sobre los fondos identificados por el informe; ratios **7,48:1** y **7,29:1**.
+- **Semántica:** se confirmó que `.map-art` continúa `aria-hidden="true"`.
+- **axe DevTools y Lighthouse:** no se repitieron después del cambio; no se atribuyen resultados nuevos a esas herramientas.
+- **Capturas manuales:** pendientes; son la única evidencia visual solicitada al usuario.
+
+La implementación y la comprobación específica están completadas. No se declara conformidad global WCAG.
+
+### Evidencias manuales requeridas
+
+Comparar la etiqueta en el mismo viewport y encuadre; tomar imágenes reales y no reconstruir la captura previa.
+
+1. **`F08-ERR-A11Y-08-codigo-antes.png`** — Mostrar la declaración original de `.label-two` recuperada con `git show 14613d4:css/styles.css`.
+2. **`F08-ERR-A11Y-08-codigo-despues.png`** — Mostrar el comentario histórico y el override `.map-art .label-two`.
+3. **`F08-ERR-A11Y-08-etiqueta-antes.png`** — Captura auténtica previa de la etiqueta “Norte de Santander”; si no se conserva, indicarlo.
+4. **`F08-ERR-A11Y-08-etiqueta-despues.png`** — Captura de la misma etiqueta tras el cambio.
+5. **`F08-ERR-A11Y-08-contraste-medido.png`** — Mostrar colores computados y ratios posteriores sobre ambos fondos observados.
+
+#### Marcadores para incorporar las capturas
+
+> **Pendiente:** insertar `F08-ERR-A11Y-08-codigo-antes.png` aquí. Debe mostrar la regla anterior.
+
+> **Pendiente:** insertar `F08-ERR-A11Y-08-codigo-despues.png` aquí. Debe mostrar el override activo y su comentario histórico.
+
+> **Pendiente:** insertar `F08-ERR-A11Y-08-etiqueta-antes.png` aquí. Debe ser evidencia visual previa auténtica; si no existe, dejar constancia.
+
+> **Pendiente:** insertar `F08-ERR-A11Y-08-etiqueta-despues.png` aquí. Debe mostrar la misma vista tras el cambio.
+
+> **Pendiente:** insertar `F08-ERR-A11Y-08-contraste-medido.png` aquí. Debe mostrar la medición realizada para ambos fondos.
+
 ## Unidades pendientes
 
-Las unidades posteriores a F07 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
+Las unidades posteriores a F08 del plan de correcciones no se han iniciado. Se documentarán por separado después de su autorización e implementación.
