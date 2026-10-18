@@ -426,7 +426,7 @@ Usar el mismo viewport y encuadre para las capturas de comparación. La vista pr
 **Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `advanced/text-contrast`, selector `.card-image-wrap > .image-fallback[role="img"]`).
 **Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable al texto visible de 18 px.
 **Prioridad:** P2, porque el mensaje visible de reemplazo debe seguir siendo legible cuando falta una fotografía.
-**Estado de implementación:** corregida en `css/styles.css`; el estilo compartido cubre el fallback de tarjeta y el del diálogo. La corrección fue comprometida en `9f53ffb`, cuyo mensaje original identificó esta unidad erróneamente como F09; esta regularización la registra como F08/ERR-A11Y-08.
+**Estado de implementación:** corregida en `css/styles.css`; el estilo compartido cubre el fallback de tarjeta y el del diálogo. La corrección fue comprometida en `9f53ffb`; esta regularización corrige el identificador ERR-A11Y-09 que se había consignado por error en el comentario y el informe anteriores, y la registra como F08/ERR-A11Y-08.
 **Estado de verificación:** Playwright confirmó el fallback visible en una tarjeta y los ratios calculados en ambos extremos del degradado. No se abrió el diálogo para comprobar allí el fallback; esa prueba sigue pendiente. axe DevTools y Lighthouse no se repitieron.
 
 ### Código anterior y corrección
