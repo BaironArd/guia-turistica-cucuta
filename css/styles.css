@@ -140,7 +140,7 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .card-image-wrap { position: relative; height: 205px; overflow: hidden; background: #d6ded5; }
 .card-image { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
 .destination-card:hover .card-image { transform: scale(1.045); }
-/* ERR-A11Y-09 Código anterior (histórico; no ejecutar): .image-fallback { display: grid; width: 100%; height: 100%; place-items: center; color: #566a5d; background: linear-gradient(140deg, #dce4d8, #b8c8b3); font-family: var(--serif); font-size: 18px; } */
+/* ERR-A11Y-08 Código anterior (histórico; no ejecutar): .image-fallback { display: grid; width: 100%; height: 100%; place-items: center; color: #566a5d; background: linear-gradient(140deg, #dce4d8, #b8c8b3); font-family: var(--serif); font-size: 18px; } */
 .image-fallback { display: grid; width: 100%; height: 100%; place-items: center; color: #3f5147; background: linear-gradient(140deg, #dce4d8, #b8c8b3); font-family: var(--serif); font-size: 18px; }
 .image-fallback[hidden] { display: none; }
 .card-category { position: absolute; bottom: 12px; left: 13px; padding: 5px 9px; color: var(--forest); background: rgba(251, 250, 247, .94); border-radius: 2px; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
@@ -183,8 +183,6 @@ h2 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(37px, 4.5v
 .pin-two { top: 29%; left: 30%; }.pin-three { top: 70%; left: 77%; }
 .map-label { position: absolute; color: rgba(232, 238, 228, .84); font-size: 10px; letter-spacing: .06em; }
 .label-one { top: 43%; left: calc(49% + 27px); }.label-two { top: 73%; left: 12%; color: rgba(232, 238, 228, .56); font-size: 9px; }
-/* ERR-A11Y-08 Código anterior (histórico; no ejecutar): .label-two usaba rgba(232, 238, 228, .56) y daba entre 4.13:1 y 4.3:1. */
-.map-art .label-two { color: rgba(232, 238, 228, .84); }
 .map-compass { position: absolute; top: 17px; right: 18px; display: grid; color: #b8cbb8; font-size: 9px; text-align: center; }.map-compass i { font-size: 17px; font-style: normal; }
 
 /* Presentación del proyecto y disposición de las cifras resumen. */

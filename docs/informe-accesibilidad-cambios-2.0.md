@@ -7,7 +7,7 @@ Este informe registra las correcciones implementadas en unidades pequeñas, sus 
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales guardadas en `docs/`
-**Estado del documento:** F01, F02, F03, F04, F05, F06, F07, F08 y F09 implementadas y verificadas mediante comprobaciones específicas en navegador; capturas manuales pendientes.
+**Estado del documento:** F01–F08 implementadas y comprobadas de forma específica en navegador; capturas manuales y nueva pasada completa de herramientas pendientes. F09–F11 siguen pendientes de evaluación manual, nueva verificación de Lighthouse y detalle de WAVE.
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
@@ -417,112 +417,89 @@ Usar el mismo viewport y encuadre para las capturas de comparación. La vista pr
 
 > **Pendiente:** insertar `F07-ERR-A11Y-07-contraste-medido.png` aquí. Debe mostrar la inspección real de los colores renderizados.
 
-## Unidad F08 — Contraste de la etiqueta “Norte de Santander” en el mapa ilustrativo
+## Unidad F08 — Contraste del texto de fallback de imagen
 
 ### Hallazgo y origen
 
 **ID interno:** ERR-A11Y-08
-**Problema:** la etiqueta visible `.label-two` usaba texto semitransparente `rgba(232, 238, 228, .56)` sobre los tonos oscuros del mapa, con contrastes reportados entre **4,13:1 y 4,30:1**.
-**Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `advanced/text-contrast`, selector `.label-two`). La etiqueta está dentro de `.map-art[aria-hidden="true"]` y es decorativa para tecnologías de asistencia; se corrige igualmente su contraste visual, sin modificar esa semántica.
-**Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), considerado para el texto visible. No se atribuye este selector a Lighthouse; no aparece entre los nodos fallidos de su auditoría de contraste.
-**Prioridad:** P3, por ser una etiqueta de apoyo dentro de una ilustración no interactiva y oculta del árbol de accesibilidad.
-**Estado de implementación:** corregida en `css/styles.css`; se aumentó la opacidad del texto para que coincida con la otra etiqueta del mapa.
-**Estado de verificación:** colores computados e inspección del contraste en navegador; capturas manuales pendientes. axe DevTools y Lighthouse no se repitieron tras el cambio.
-
-### Código anterior y corrección
-
-Archivo afectado: [`css/styles.css`](../css/styles.css).
-
-Antes, `.label-two` tenía opacidad `.56`, menor que la etiqueta hermana `.label-one` (`.84`). El valor anterior se conserva en el comentario histórico `ERR-A11Y-08`. El override acotado a `.map-art .label-two` aplica la misma opacidad `.84` que la etiqueta hermana. Sobre Los fondos identificados por axe (`#153f38` y `#174139`), el nuevo color compuesto alcanza **7,48:1** y **7,29:1**, respectivamente.
-
-La ilustración sigue marcada `aria-hidden="true"`; no se añadieron nombres accesibles ni contenido funcional.
-
-### Pruebas y estado
-
-- **Revisión de alcance:** el cambio solo afecta `.map-art .label-two`; la etiqueta hermana y el resto de la ilustración permanecen sin cambios.
-- **Contraste:** inspección con Playwright del color computado y cálculo sobre los fondos identificados por el informe; ratios **7,48:1** y **7,29:1**.
-- **Semántica:** se confirmó que `.map-art` continúa `aria-hidden="true"`.
-- **axe DevTools y Lighthouse:** no se repitieron después del cambio; no se atribuyen resultados nuevos a esas herramientas.
-- **Capturas manuales:** pendientes; son la única evidencia visual solicitada al usuario.
-
-La implementación y la comprobación específica están completadas. No se declara conformidad global WCAG.
-
-### Evidencias manuales requeridas
-
-Comparar la etiqueta en el mismo viewport y encuadre; tomar imágenes reales y no reconstruir la captura previa.
-
-1. **`F08-ERR-A11Y-08-codigo-antes.png`** — Mostrar la declaración original de `.label-two` recuperada con `git show 14613d4:css/styles.css`.
-2. **`F08-ERR-A11Y-08-codigo-despues.png`** — Mostrar el comentario histórico y el override `.map-art .label-two`.
-3. **`F08-ERR-A11Y-08-etiqueta-antes.png`** — Captura auténtica previa de la etiqueta “Norte de Santander”; si no se conserva, indicarlo.
-4. **`F08-ERR-A11Y-08-etiqueta-despues.png`** — Captura de la misma etiqueta tras el cambio.
-5. **`F08-ERR-A11Y-08-contraste-medido.png`** — Mostrar colores computados y ratios posteriores sobre ambos fondos observados.
-
-#### Marcadores para incorporar las capturas
-
-> **Pendiente:** insertar `F08-ERR-A11Y-08-codigo-antes.png` aquí. Debe mostrar la regla anterior.
-
-> **Pendiente:** insertar `F08-ERR-A11Y-08-codigo-despues.png` aquí. Debe mostrar el override activo y su comentario histórico.
-
-> **Pendiente:** insertar `F08-ERR-A11Y-08-etiqueta-antes.png` aquí. Debe ser evidencia visual previa auténtica; si no existe, dejar constancia.
-
-> **Pendiente:** insertar `F08-ERR-A11Y-08-etiqueta-despues.png` aquí. Debe mostrar la misma vista tras el cambio.
-
-> **Pendiente:** insertar `F08-ERR-A11Y-08-contraste-medido.png` aquí. Debe mostrar la medición realizada para ambos fondos.
-
-## Unidad F09 — Contraste del texto de fallback de imagen
-
-### Hallazgo y origen
-
-**ID interno:** ERR-A11Y-09
 **Problema:** el texto del fallback de imagen usaba `#566a5d` sobre un degradado claro y la regla avanzada de axe registró contrastes entre **3,68:1 y 4,20:1**.
-**Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `advanced/text-contrast`, selector `.card-image-wrap > .image-fallback[role="img"]`). El fallback está visible actualmente en una tarjeta del catálogo.
+**Fuente original:** `docs/axe-dev-tools-base.json` y `docs/axe-dev-tools-completo.json` (exports idénticos; regla `advanced/text-contrast`, selector `.card-image-wrap > .image-fallback[role="img"]`).
 **Criterio relacionado:** WCAG 2.2, [1.4.3 Contraste (mínimo), nivel AA](https://www.w3.org/TR/WCAG22/#contrast-minimum), aplicable al texto visible de 18 px.
-**Prioridad:** P2, porque el mensaje de reemplazo debe seguir siendo legible cuando falta una fotografía.
-**Estado de implementación:** corregida en `css/styles.css`; el estilo compartido cubre el placeholder de tarjeta y el fallback del diálogo.
-**Estado de verificación:** color y degradado computados en navegador; ratios calculados en ambos extremos del degradado. Capturas manuales pendientes. La regla avanzada de axe y Lighthouse no se repitieron tras el cambio.
+**Prioridad:** P2, porque el mensaje visible de reemplazo debe seguir siendo legible cuando falta una fotografía.
+**Estado de implementación:** corregida en `css/styles.css`; el estilo compartido cubre el fallback de tarjeta y el del diálogo. La corrección fue comprometida en `9f53ffb`, cuyo mensaje original identificó esta unidad erróneamente como F09; esta regularización la registra como F08/ERR-A11Y-08.
+**Estado de verificación:** Playwright confirmó el fallback visible en una tarjeta y los ratios calculados en ambos extremos del degradado. No se abrió el diálogo para comprobar allí el fallback; esa prueba sigue pendiente. axe DevTools y Lighthouse no se repitieron.
 
 ### Código anterior y corrección
 
 Archivo afectado: [`css/styles.css`](../css/styles.css).
 
-El color histórico `#566a5d` se conserva como comentario junto a la regla activa. Se cambió a `#3f5147` sin modificar el degradado, el texto ni la generación del fallback. Contra los extremos del degradado (`#dce4d8` y `#b8c8b3`), el nuevo color obtiene **6,51:1** y **4,82:1**, respectivamente; ambos superan el mínimo 4,5:1.
+El color histórico `#566a5d` se conserva en un comentario y ahora está identificado como ERR-A11Y-08. Se cambió a `#3f5147` sin modificar el degradado, el texto ni la generación del fallback. Contra los extremos del degradado (`#dce4d8` y `#b8c8b3`), el nuevo color obtiene **6,51:1** y **4,82:1**, respectivamente; ambos superan el mínimo de 4,5:1.
 
 ### Pruebas y estado
 
-- **Fallback visible:** Playwright encontró el mensaje «Fotografía no disponible en esta versión» en una tarjeta y comprobó el estilo aplicado; se verificó también que el diálogo conserva el mismo color CSS compartido.
+- **Fallback visible:** Playwright encontró «Fotografía no disponible en esta versión» en una tarjeta y confirmó el estilo activo.
 - **Contraste:** cálculo sobre ambos extremos del degradado computado: **6,51:1** en `#dce4d8` y **4,82:1** en `#b8c8b3`.
+- **Prueba pendiente:** abrir un lugar sin fotografía en el diálogo y comprobar la reserva visible y su contraste.
 - **Regresión:** no se cambió `js/main.js`, el texto alternativo, el `role="img"` ni el comportamiento que muestra el fallback.
-- **axe DevTools y Lighthouse:** no se repitieron tras el cambio; no se atribuyen resultados nuevos a esas herramientas.
-- **Capturas manuales:** pendientes; son la única evidencia visual solicitada al usuario.
+- **Auditorías globales:** axe DevTools y Lighthouse no se repitieron después de la corrección.
+- **Evidencias manuales:** capturas pendientes. No se conservan capturas dirigidas D0 previas a este cambio; no se reconstruirán como si fueran originales.
 
-La corrección y la verificación de contraste específica están realizadas. No se declara conformidad global WCAG.
+No se declara conformidad global WCAG ni se afirma que el hallazgo haya desaparecido de una nueva ejecución de axe.
 
-### Evidencias manuales requeridas
+### Evidencias pendientes
 
-Usar el fallback realmente visible en el navegador, conservando el mismo viewport para antes y después. No recrear el color anterior si no existe captura auténtica.
-
-1. **`F09-ERR-A11Y-09-codigo-antes.png`** — Mostrar la regla histórica `#566a5d` recuperada con `git show 2750104:css/styles.css`.
-2. **`F09-ERR-A11Y-09-codigo-despues.png`** — Mostrar la regla activa `#3f5147` y el comentario ERR-A11Y-09.
-3. **`F09-ERR-A11Y-09-fallback-antes.png`** — Captura auténtica previa del placeholder; si no se conserva, dejar constancia.
-4. **`F09-ERR-A11Y-09-fallback-despues.png`** — Capturar el fallback visible actual en la tarjeta.
-5. **`F09-ERR-A11Y-09-contraste-medido.png`** — Mostrar el color computado y ratios de ambos extremos del degradado.
+1. **`F08-ERR-A11Y-08-codigo-antes.png`** — Regla original `#566a5d` recuperada con `git show 2750104:css/styles.css`.
+2. **`F08-ERR-A11Y-08-codigo-despues.png`** — Regla activa `#3f5147` y comentario ERR-A11Y-08.
+3. **`F08-ERR-A11Y-08-fallback-antes.png`** — Captura previa auténtica de Plaza de Banderas; si no existe, dejar constancia, sin reconstruirla.
+4. **`F08-ERR-A11Y-08-fallback-despues.png`** — Fallback real en la tarjeta actual.
+5. **`F08-ERR-A11Y-08-dialogo-despues.png`** — Fallback del diálogo al abrir un destino sin fotografía.
+6. **`F08-ERR-A11Y-08-contraste-medido.png`** — Colores computados y ratios de ambos extremos del degradado.
 
 #### Marcadores para incorporar las capturas
 
-> **Pendiente:** insertar `F09-ERR-A11Y-09-codigo-antes.png` aquí. Debe mostrar el color original y la regla de fallback.
+> **Pendiente:** insertar `F08-ERR-A11Y-08-codigo-antes.png` aquí.
+>
+> **Pendiente:** insertar `F08-ERR-A11Y-08-codigo-despues.png` aquí.
+>
+> **Pendiente:** insertar `F08-ERR-A11Y-08-fallback-antes.png` aquí; si no existe evidencia previa, dejar constancia.
+>
+> **Pendiente:** insertar `F08-ERR-A11Y-08-fallback-despues.png` aquí.
+>
+> **Pendiente:** insertar `F08-ERR-A11Y-08-dialogo-despues.png` aquí.
+>
+> **Pendiente:** insertar `F08-ERR-A11Y-08-contraste-medido.png` aquí.
 
-> **Pendiente:** insertar `F09-ERR-A11Y-09-codigo-despues.png` aquí. Debe mostrar el color nuevo y el comentario histórico.
+## Unidad F09 — Evaluación manual de encabezados y texto del mapa
 
-> **Pendiente:** insertar `F09-ERR-A11Y-09-fallback-antes.png` aquí. Debe ser una captura previa auténtica; si no existe, dejar constancia.
+**Hallazgos:** OBS-A11Y-09 (`.card-location`) y OBS-A11Y-10 (`.label-two`).
+**Estado:** evaluación manual pendiente; no se ha confirmado una infracción ni un falso positivo definitivo. El plan no autoriza cambios antes de evaluar la función de ambos elementos.
 
-> **Pendiente:** insertar `F09-ERR-A11Y-09-fallback-despues.png` aquí. Debe mostrar el placeholder real tras la corrección.
+- Para OBS-A11Y-09, axe marcó tres `.card-location` como posibles encabezados. La inspección estática muestra ubicaciones en párrafos y nombre del destino en `<h3>`, pero falta revisar la lista de encabezados y escuchar la lectura de las tarjetas con tecnologías de asistencia.
+- Para OBS-A11Y-10, `.label-two` está dentro de `.map-art[aria-hidden="true"]`. Su función visual debe evaluarse antes de decidir si se conserva como texto informativo con contraste corregido o si es puramente ornamental.
+- Un override de contraste en `.map-art .label-two` se había añadido en el commit `2750104` sin completar esta evaluación. Se retiró en esta regularización; el estilo activo vuelve al original. No debe contarse como una corrección de accesibilidad finalizada.
+- **Sin cambios semánticos aprobados:** no modificar encabezados, `aria-hidden` ni el estilo del mapa hasta resolver la evaluación.
+- **Evidencia pendiente:** lista de encabezados/árbol accesible, lectura de las tarjetas señaladas, vista de la ilustración en contexto y, si ayuda, detalle WAVE por elemento.
 
-> **Pendiente:** insertar `F09-ERR-A11Y-09-contraste-medido.png` aquí. Debe incluir el color computado y los dos ratios calculados.
+## Unidad F10 — Verificaciones manuales de Lighthouse
 
-## Evaluación de una heurística de encabezados
+**Hallazgo:** VER-A11Y-11.
+**Estado:** pendiente; Lighthouse enumera diez pruebas manuales, pero esos registros no son resultados de aprobado ni de fallido.
 
-axe también registró tres candidatos en `article:nth-child(10|15|19) > .card-content > .card-location` para la regla `advanced/heading-markup`. La inspección del template confirma que `.card-location` contiene la ubicación del lugar en un párrafo, mientras que el nombre del destino es el encabezado `<h3>` de cada tarjeta. La ubicación no actúa como título, por lo que convertirla en encabezado alteraría la jerarquía semántica; estos tres resultados se clasifican como **falsos positivos heurísticos** y no requieren cambio de código.
+Pruebas pendientes: `custom-controls-labels`, `custom-controls-roles`, `focus-traps`, `focusable-controls`, `interactive-element-affordance`, `logical-tab-order`, `managed-focus`, `offscreen-content-hidden`, `use-landmarks` y `visual-order-follows-dom`.
 
-## Unidades pendientes
+Registrar cada resultado real al probar teclado y foco, menú móvil, diálogo, landmarks y orden visual/DOM. Si aparece un defecto, crear un hallazgo específico con su criterio WCAG y tratarlo en una unidad separada; no marcar esta verificación como superada por inspección estática.
 
-No se han iniciado nuevas correcciones fuera de los hallazgos descritos. La captura WAVE original sigue siendo solo un resumen, sin selectores identificables; no se le atribuyen elementos concretos ni se inventan resultados.
+## Unidad F11 — Completar evidencia de WAVE
+
+**Hallazgo:** SRC-A11Y-12.
+**Estado:** pendiente por limitación de la fuente. La captura de resumen disponible presenta contadores generales, pero no elementos, selectores ni valores de contraste.
+
+Se necesita un informe/exportación detallado o capturas de WAVE por elemento para clasificar y deduplicar cada resultado. Después de F01–F08, también queda pendiente una nueva pasada completa de axe/Lighthouse y WAVE; no se han ejecutado tras esos cambios.
+
+## Evidencias y límites pendientes
+
+- Las capturas D0 dirigidas por componente no se tomaron antes de F01–F08. No presentar capturas del estado actual ni capturas reconstruidas desde CSS como si fueran evidencia visual anterior. Si se conserva una captura original auténtica, puede incorporarse; de lo contrario, documentar su ausencia y capturar D1.
+- Las capturas D1 actuales y las de estados de interacción siguen pendientes, igual que los resultados de auditoría posterior.
+- Las cinco fuentes originales de `docs` permanecen sin seguimiento en Git y no se incluyen en los commits.
+- Los dos JSON de axe eran idénticos. La captura WAVE actual no permite atribuir sus contadores a componentes concretos.
+- El informe registra ratios verificados localmente para algunos elementos, pero no una nueva auditoría automatizada, revisión completa de regresiones ni conformidad global WCAG.
