@@ -18,9 +18,8 @@
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <div class="container header-inner">
-        <!-- ERR-A11Y-01: Versión anterior: aria-label="Guía Turística de Cúcuta, inicio". Excluía "Descubre", texto visible del enlace. -->
-        <a class="brand" href="#inicio" aria-label="Descubre Cúcuta, inicio">
-          <span class="brand-mark" aria-hidden="true">C</span>
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-copy"><strong>Descubre</strong><span>Cúcuta</span></span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
@@ -67,7 +66,7 @@
             <p>Camina por el centro y sus edificios reconocibles, haz una pausa al aire libre o descubre lugares para compartir y comprar. Elige una ruta y explora a tu ritmo.</p>
             <a class="text-link" href="#destinos">Ver todos los lugares <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="route-list" aria-label="Rutas para explorar">
+          <div class="route-list" role="group" aria-label="Rutas para explorar">
             <a class="route-item" href="#destinos" data-category-link="historico">
               <span class="route-number">01</span><span class="route-icon" aria-hidden="true">⌂</span>
               <span class="route-copy"><strong>Historia y cultura</strong><small>Plazas, arquitectura y espacios culturales</small></span><span class="route-arrow" aria-hidden="true">↗</span>
@@ -151,7 +150,7 @@
             <p>Esta guía informativa reúne lugares históricos, culturales, espacios abiertos y puntos de encuentro de Cúcuta, Norte de Santander. Está pensada para visitantes y habitantes que quieren explorar la ciudad y consultar sus lugares en el mapa.</p>
             <p>Es un proyecto académico independiente, no una publicación oficial. La información puede cambiar: confirma horarios, acceso y condiciones directamente con cada lugar antes de visitarlo.</p>
           </div>
-          <div class="about-stats" aria-label="Alcance de la guía">
+          <div class="about-stats" role="group" aria-label="Alcance de la guía">
             <div><strong id="place-total">—</strong><span>lugares para explorar</span></div>
             <div><strong>4</strong><span>categorías de lugares</span></div>
             <div><strong>1</strong><span>ciudad por descubrir</span></div>
@@ -163,9 +162,8 @@
     <!-- Navegación secundaria, enlace al registro de imágenes y año actualizado mediante JavaScript. -->
     <footer class="site-footer">
       <div class="container footer-main">
-        <!-- ERR-A11Y-01: Versión anterior: aria-label="Guía Turística de Cúcuta, volver al inicio". Excluía "Descubre", texto visible del enlace. -->
-        <a class="brand footer-brand" href="#inicio" aria-label="Descubre Cúcuta, volver al inicio">
-          <span class="brand-mark" aria-hidden="true">C</span><span class="brand-copy"><strong>Descubre</strong><span>Cúcuta</span></span>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true"></span><span class="brand-copy"><strong>Descubre</strong><span>Cúcuta</span></span>
         </a>
         <p>Una invitación a mirar la ciudad<br>con otros ojos.</p>
         <nav class="footer-nav" aria-label="Navegación del pie de página">
@@ -183,7 +181,7 @@
     <!-- Diálogo nativo rellenado por main.js con el detalle del destino seleccionado y su enlace de mapa. -->
     <dialog class="place-dialog" id="place-dialog" aria-labelledby="dialog-title">
       <button class="dialog-close" type="button" aria-label="Cerrar detalles">×</button>
-      <img id="dialog-image" src="" alt="" width="1000" height="640">
+      <img id="dialog-image" alt="" width="1000" height="640">
       <div class="image-fallback dialog-image-fallback" id="dialog-image-fallback" role="img" aria-label="Fotografía no disponible" hidden>Fotografía no disponible</div>
       <div class="dialog-body">
         <p class="eyebrow" id="dialog-category"></p>

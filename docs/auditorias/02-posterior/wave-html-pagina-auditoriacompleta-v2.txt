@@ -1,0 +1,220 @@
+▶
+The following apply to the entire page:
+FEATURES: Language*es*
+Saltar al contenido
+STRUCTURAL ELEMENTS: Header
+CARIA: ARIA hidden DescubreCúcuta ARIA: ARIA label*aria-label="Descubre Cúcuta, inicio"* Menú ARIA: ARIA hidden ARIA: ARIA*aria-controls="primary-nav"*ARIA: ARIA expanded
+STRUCTURAL ELEMENTS: Navigation Inicio Rutas NaturalezaARIA: ARIA*aria-current="location"* Ocio y comercioARIA: ARIA*aria-current="location"* Mapa La guía ARIA: ARIA label*aria-label="Navegación principal"*
+Explorar ↗ARIA: ARIA hidden
+STRUCTURAL ELEMENTS: Main content
+Vista panorámica de Cúcuta desde TorcoromaFEATURES: Alternative text*Vista panorámica de Cúcuta desde Torcoroma*
+Norte de Santander · Colombia
+
+STRUCTURAL ELEMENTS: Heading level 1Descubre
+Cúcuta
+Una ciudad para recorrer entre memoria, espacios abiertos y vida cotidiana.
+
+Explorar destinos →ARIA: ARIA hidden Descubrir las rutas
+Una guía para mirar la ciudad de cerca
+↓ARIA: ARIA hiddenARIA: ARIA label*aria-label="Desplazarse a las rutas"* ARIA: ARIA label*aria-labelledby="hero-title"*
+ALERTS: Very small text01ALERTS: Very small textEmpieza por aquí
+ALERTS: Very small textUna ciudad, muchas maneras de vivirla
+
+STRUCTURAL ELEMENTS: Heading level 2Encuentra tu propia
+ruta por Cúcuta.
+Camina por el centro y sus edificios reconocibles, haz una pausa al aire libre o descubre lugares para compartir y comprar. Elige una ruta y explora a tu ritmo.
+
+Ver todos los lugares CONTRAST ERRORS: Very low contrast↗ARIA: ARIA hidden
+ALERTS: Very small text01CONTRAST ERRORS: Very low contrast⌂ARIA: ARIA hidden Historia y culturaPlazas, arquitectura y espacios culturalesCONTRAST ERRORS: Very low contrast↗ARIA: ARIA hidden ALERTS: Very small text02CONTRAST ERRORS: Very low contrast✳ARIA: ARIA hidden Aire libreMiradores y espacios para caminarCONTRAST ERRORS: Very low contrast↗ARIA: ARIA hidden ALERTS: Very small text03CONTRAST ERRORS: Very low contrast◌ARIA: ARIA hidden Ocio y comercioLugares para encontrarse y recorrerCONTRAST ERRORS: Very low contrast↗ARIA: ARIA hidden ARIA: ARIA label*aria-label="Rutas para explorar"*
+ARIA: ARIA label*aria-labelledby="routes-title"*
+ALERTS: Very small text02ALERTS: Very small textGuía de lugares
+ALERTS: Very small textEscoge qué descubrir
+
+STRUCTURAL ELEMENTS: Heading level 2Lugares que cuentan
+la ciudad.
+Una selección para conocer Cúcuta desde sus espacios y su gente. Consulta cada ubicación antes de salir.
+
+Todos ALERTS: Very small text20ARIA: ARIA*aria-pressed="true"* Histórico y cultural ALERTS: Very small textCONTRAST ERRORS: Very low contrast7ARIA: ARIA*aria-pressed="false"* Naturaleza ALERTS: Very small textCONTRAST ERRORS: Very low contrast8ARIA: ARIA*aria-pressed="false"* Ocio y recreación ALERTS: Very small textCONTRAST ERRORS: Very low contrast4ARIA: ARIA*aria-pressed="false"* Comercio ALERTS: Very small textCONTRAST ERRORS: Very low contrast1ARIA: ARIA*aria-pressed="false"* ARIA: ARIA*role="group"*ARIA: ARIA label*aria-label="Filtrar lugares por categoría"*
+Buscar por lugar, categoría o ubicación ⌕ARIA: ARIA hidden 
+Buscar un lugar…
+ CONTRAST ERRORS: Very low contrast/ARIA: ARIA hidden FEATURES: Form label
+20 todos los lugares.
+
+ARIA: ARIA alert or live region
+Vista del Parque Santander en CúcutaFEATURES: Alternative text*Vista del Parque Santander en Cúcuta* ALERTS: Very small textHistórico y cultural
+ALERTS: Very small textCentro · Cúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Santander
+Plaza urbana del centro de Cúcuta, un punto para empezar un recorrido a pie por los espacios cívicos del sector.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Fachada de la Catedral de San José de CúcutaFEATURES: Alternative text*Fachada de la Catedral de San José de Cúcuta* ALERTS: Very small textHistórico y cultural
+ALERTS: Very small textCentro · Cúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Catedral de San José
+Templo catedralicio de la ciudad, ubicado en el centro. Consulta en el mapa cómo llegar y confirma las condiciones de visita.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Torre del Reloj de CúcutaFEATURES: Alternative text*Torre del Reloj de Cúcuta* ALERTS: Very small textHistórico y cultural
+ALERTS: Very small textCentro · Cúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Torre del Reloj
+Edificio emblemático del centro cucuteño. Su reloj y su arquitectura hacen de esta torre una referencia reconocible del recorrido urbano.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Casa Quinta Teresa en CúcutaFEATURES: Alternative text*Casa Quinta Teresa en Cúcuta* ALERTS: Very small textHistórico y cultural
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Quinta Teresa
+Casa quinta de valor arquitectónico y patrimonial. Revisa la ubicación y la información de acceso antes de planear la visita.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Edificio de la Biblioteca Pública Julio Pérez FerreroFEATURES: Alternative text*Edificio de la Biblioteca Pública Julio Pérez Ferrero* ALERTS: Very small textCultural
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Biblioteca Pública Julio Pérez Ferrero
+Espacio público de lectura y encuentro cultural. Consulta sus canales de información para conocer actividades y horarios vigentes.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque Colón, también llamado Parque La Victoria, en CúcutaFEATURES: Alternative text*Parque Colón, también llamado Parque La Victoria, en Cúcuta* ALERTS: Very small textHistórico y cultural
+ALERTS: Very small textBarrio La Playa · Cúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Colón (Parque La Victoria)
+Espacio público también conocido como Parque La Victoria, contiguo a la Biblioteca Pública Julio Pérez Ferrero. Consulta su ubicación antes de iniciar el recorrido.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque Juana Rangel de Cuéllar en CúcutaFEATURES: Alternative text*Parque Juana Rangel de Cuéllar en Cúcuta* ALERTS: Very small textHistórico y cultural
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Juana Rangel de Cuéllar
+Espacio público identificado con el nombre de Juana Rangel de Cuéllar. Consulta el mapa para verificar su ubicación y las condiciones de visita.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Monumento de Cristo Rey en CúcutaFEATURES: Alternative text*Monumento de Cristo Rey en Cúcuta* ALERTS: Very small textNaturaleza y paisaje
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Cristo Rey
+Punto elevado y referente visual de la ciudad. La subida y las condiciones de acceso pueden variar; verifica la ruta antes de salir.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Zona de parque en el Malecón de CúcutaFEATURES: Alternative text*Zona de parque en el Malecón de Cúcuta* ALERTS: Very small textAire libre
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Malecón de Cúcuta
+Espacio abierto para caminar y disfrutar al aire libre. Consulta el mapa para ubicar sus accesos y revisa las condiciones locales.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque Mercedes Ábrego en CúcutaFEATURES: Alternative text*Parque Mercedes Ábrego en Cúcuta* ALERTS: Very small textParque urbano
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Mercedes Ábrego
+Parque urbano de Cúcuta. Consulta su ubicación y las condiciones actuales del espacio antes de visitarlo.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque Nacional en CúcutaFEATURES: Alternative text*Parque Nacional en Cúcuta* ALERTS: Very small textParque urbano
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Nacional
+Espacio público al aire libre en Cúcuta. Verifica en el mapa el punto de acceso correspondiente al parque.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque Los Pinos en CúcutaFEATURES: Alternative text*Parque Los Pinos en Cúcuta* ALERTS: Very small textParque urbano
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Los Pinos
+Parque urbano identificado en la ciudad. Consulta el mapa para confirmar su ubicación antes de desplazarte.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque del barrio Popular en CúcutaFEATURES: Alternative text*Parque del barrio Popular en Cúcuta* ALERTS: Very small textParque urbano
+ALERTS: Very small textBarrio Popular · Cúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Barrio Popular
+Espacio público de barrio en Cúcuta. Consulta su ubicación y las condiciones del sector antes de visitarlo.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque Bavaria en CúcutaFEATURES: Alternative text*Parque Bavaria en Cúcuta* ALERTS: Very small textParque urbano
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque Bavaria
+Parque urbano identificado en Cúcuta. Revisa el mapa para ubicar el acceso y planear la visita.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque principal del sector San Luis en CúcutaFEATURES: Alternative text*Parque principal del sector San Luis en Cúcuta* ALERTS: Very small textParque urbano
+ALERTS: Very small textSan Luis · Cúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque principal de San Luis
+Parque del sector de San Luis en Cúcuta. Consulta el mapa para confirmar la ubicación exacta.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Fotografía no disponible en esta versiónARIA: ARIA*role="img"*ARIA: ARIA label*aria-label="Fotografía de Plaza de Banderas no disponible en esta versión"*
+ALERTS: Very small textOcio y recreación
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Plaza de Banderas
+Espacio cívico abierto para hacer una pausa y recorrer el entorno urbano. Consulta su ubicación en el mapa antes de tu visita.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque del Agua en Cúcuta iluminado de nocheFEATURES: Alternative text*Parque del Agua en Cúcuta iluminado de noche* ALERTS: Very small textOcio y recreación
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Parque del Agua
+Espacio recreativo de la ciudad. Confirma con el operador o en fuentes locales si está abierto y consulta las condiciones de acceso.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Parque y glorieta del Indio Motilón en CúcutaFEATURES: Alternative text*Parque y glorieta del Indio Motilón en Cúcuta* ALERTS: Very small textEspacio urbano
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Glorieta del Indio Motilón
+Referente urbano identificado como Glorieta del Indio Motilón. Consulta el mapa para localizarla y planear el recorrido.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Estadio General Santander en CúcutaFEATURES: Alternative text*Estadio General Santander en Cúcuta* ALERTS: Very small textDeportivo y recreativo
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Estadio General Santander
+Escenario deportivo de Cúcuta. La realización de eventos, el ingreso y los horarios dependen de la programación vigente.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+Fachada del centro comercial Ventura Plaza en CúcutaFEATURES: Alternative text*Fachada del centro comercial Ventura Plaza en Cúcuta* ALERTS: Very small textComercio
+ALERTS: Very small textCúcuta
+
+STRUCTURAL ELEMENTS: Heading level 3Ventura Plaza
+Centro comercial de la ciudad con una oferta de tiendas y servicios. Comprueba horarios, eventos y servicios directamente con el establecimiento.
+
+Conocer lugar ALERTS: Very small text→ARIA: ARIA hidden Mapa ALERTS: Very small text↗ARIA: ARIA hidden
+ALERTS: Noscript element
+ARIA: ARIA label*aria-labelledby="destinations-title"*
+ALERTS: Very small text03ALERTS: Very small textUbícate
+ALERTS: Very small textEl siguiente paso es tuyo
+
+STRUCTURAL ELEMENTS: Heading level 2Cúcuta, lista
+para recorrer.
+Abre el mapa para consultar la ciudad y planear tu visita. Cada lugar de esta guía incluye un enlace de búsqueda en Google Maps; verifica allí la ruta y los datos vigentes.
+
+Abrir Cúcuta en Google Maps ↗ARIA: ARIA hidden
+C ALERTS: Very small textSan José de CúcutaALERTS: Very small textNorte de Santander ALERTS: Very small textN ↑ ARIA: ARIA hidden
+ARIA: ARIA label*aria-labelledby="map-title"*
+CONTRAST ERRORS: Very low contrastG·ARIA: ARIA hidden
+ALERTS: Very small text04ALERTS: Very small textSobre el proyecto
+ALERTS: Very small textUna guía independiente
+
+STRUCTURAL ELEMENTS: Heading level 2Hecha para descubrir
+sin afán.
+Esta guía informativa reúne lugares históricos, culturales, espacios abiertos y puntos de encuentro de Cúcuta, Norte de Santander. Está pensada para visitantes y habitantes que quieren explorar la ciudad y consultar sus lugares en el mapa.
+
+Es un proyecto académico independiente, no una publicación oficial. La información puede cambiar: confirma horarios, acceso y condiciones directamente con cada lugar antes de visitarlo.
+
+20ALERTS: Very small textlugares para explorar
+4ALERTS: Very small textcategorías de lugares
+1ALERTS: Very small textciudad por descubrir
+ARIA: ARIA label*aria-label="Alcance de la guía"*
+ARIA: ARIA label*aria-labelledby="about-title"*
+STRUCTURAL ELEMENTS: Footer
+CARIA: ARIA hiddenDescubreCúcuta ARIA: ARIA label*aria-label="Descubre Cúcuta, volver al inicio"*
+Una invitación a mirar la ciudad
+con otros ojos.
+
+STRUCTURAL ELEMENTS: Navigation RutasDestinosMapaLa guía ARIA: ARIA label*aria-label="Navegación del pie de página"*
+Volver arriba ↑ARIA: ARIA hidden
+ALERTS: Very small text© ALERTS: Very small text2026 Guía Turística de Cúcuta ALERTS: Very small textProyecto informativo académico independiente Fuentes de imágenes
+Loading...

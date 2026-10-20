@@ -1,0 +1,3805 @@
+[
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".header-inner > .brand[href$=\"#inicio\"] > .brand-copy > span"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.49 (color de primer plano: #697770, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>Cúcuta</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A72%2C%22y%22%3A39.609375%2C%22width%22%3A69.453125%2C%22height%22%3A13.4375%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "header"
+                ],
+                "source": "<header class=\"site-header\">"
+            },
+            {
+                "selector": [
+                    "body"
+                ],
+                "source": "<body>"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".intro-layout > .section-kicker > span:nth-child(1)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.23 (color de primer plano: #a96843, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>01</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A24%2C%22y%22%3A768%2C%22width%22%3A13.28125%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".intro-layout > .section-kicker > span:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.75 (color de primer plano: #76847a, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>Empieza por aquí</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A77.359375%2C%22y%22%3A760%2C%22width%22%3A64.421875%2C%22height%22%3A32%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".intro-copy > .eyebrow"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.7 (color de primer plano: #73867b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"eyebrow\">Una ciudad, muchas maneras de vivirla</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A171.78125%2C%22y%22%3A760%2C%22width%22%3A217.453125%2C%22height%22%3A28%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "a[data-category-link=\"historico\"] > .route-number"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #829087, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span class=\"route-number\">01</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A419.234375%2C%22y%22%3A761%2C%22width%22%3A27%2C%22height%22%3A40%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "a[data-category-link=\"historico\"] > .route-copy > small"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.61 (color de primer plano: #7b867f, color de fondo: #fbfaf7, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<small>Plazas, arquitectura y espacios culturales</small>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A509.234375%2C%22y%22%3A802.796875%2C%22width%22%3A139.765625%2C%22height%22%3A35.1875%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".route-item[data-category-link=\"naturaleza\"][href$=\"#destinos\"] > .route-number"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #829087, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span class=\"route-number\">02</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A419.234375%2C%22y%22%3A856%2C%22width%22%3A27%2C%22height%22%3A40%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".route-item[data-category-link=\"naturaleza\"][href$=\"#destinos\"] > .route-copy > small"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.61 (color de primer plano: #7b867f, color de fondo: #fbfaf7, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<small>Miradores y espacios para caminar</small>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A509.234375%2C%22y%22%3A897.796875%2C%22width%22%3A139.765625%2C%22height%22%3A35.1875%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".route-item[data-category-link=\"ocio\"][href$=\"#destinos\"] > .route-number"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #829087, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span class=\"route-number\">03</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A419.234375%2C%22y%22%3A951%2C%22width%22%3A27%2C%22height%22%3A40%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".route-item[data-category-link=\"ocio\"][href$=\"#destinos\"] > .route-copy > small"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.61 (color de primer plano: #7b867f, color de fondo: #fbfaf7, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<small>Lugares para encontrarse y recorrer</small>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A509.234375%2C%22y%22%3A992.796875%2C%22width%22%3A139.765625%2C%22height%22%3A35.1875%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#rutas"
+                ],
+                "source": "<section class=\"intro section-pad\" id=\"rutas\" aria-labelledby=\"routes-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".section-heading > div > .section-kicker > span:nth-child(1)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.87 (color de primer plano: #a96843, color de fondo: #f1f0e9, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>02</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A24%2C%22y%22%3A1417.5%2C%22width%22%3A15.375%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".section-heading > div > .section-kicker > span:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.43 (color de primer plano: #76847a, color de fondo: #f1f0e9, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>Guía de lugares</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A91.375%2C%22y%22%3A1417.5%2C%22width%22%3A106.71875%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".section-heading > div > .eyebrow"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.38 (color de primer plano: #73867b, color de fondo: #f1f0e9, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"eyebrow\">Escoge qué descubrir</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A24%2C%22y%22%3A1464.5%2C%22width%22%3A322.609375%2C%22height%22%3A14%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".section-heading-note"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.17 (color de primer plano: #68766e, color de fondo: #f1f0e9, tamaño de fuente: 9.8pt (13px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"section-heading-note\">Una selección para conocer Cúcuta desde sus espacios y su gente. Consulta cada ubicación antes de salir.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A402%2C%22y%22%3A1493.703125%2C%22width%22%3A280%2C%22height%22%3A70.171875%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "button[data-filter=\"historico\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.17 (color de primer plano: #68766e, color de fondo: #f1f0e9, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<button class=\"filter-button\" type=\"button\" data-filter=\"historico\" aria-pressed=\"false\">Histórico y cultural <span data-count=\"historico\">7</span></button>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A103.90625%2C%22y%22%3A1628.875%2C%22width%22%3A132.578125%2C%22height%22%3A36%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "button[data-filter=\"naturaleza\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.17 (color de primer plano: #68766e, color de fondo: #f1f0e9, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<button class=\"filter-button\" type=\"button\" data-filter=\"naturaleza\" aria-pressed=\"false\">Naturaleza <span data-count=\"naturaleza\">8</span></button>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A242.484375%2C%22y%22%3A1628.875%2C%22width%22%3A91.3125%2C%22height%22%3A36%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "button[data-filter=\"ocio\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.17 (color de primer plano: #68766e, color de fondo: #f1f0e9, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<button class=\"filter-button\" type=\"button\" data-filter=\"ocio\" aria-pressed=\"false\">Ocio y recreación <span data-count=\"ocio\">4</span></button>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A339.796875%2C%22y%22%3A1628.875%2C%22width%22%3A127.671875%2C%22height%22%3A36%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "button[data-filter=\"comercio\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.17 (color de primer plano: #68766e, color de fondo: #f1f0e9, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<button class=\"filter-button\" type=\"button\" data-filter=\"comercio\" aria-pressed=\"false\">Comercio <span data-count=\"comercio\">1</span></button>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A473.46875%2C%22y%22%3A1628.875%2C%22width%22%3A84.59375%2C%22height%22%3A36%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "#result-status"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.63 (color de primer plano: #718078, color de fondo: #f1f0e9, tamaño de fuente: 8.3pt (11px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"result-status\" id=\"result-status\" aria-live=\"polite\">20 todos los lugares.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A24%2C%22y%22%3A1755.875%2C%22width%22%3A658%2C%22height%22%3A18%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#destinos"
+                ],
+                "source": "<section class=\"destinations section-pad\" id=\"destinos\" aria-labelledby=\"destinations-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(1) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Centro · Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A2000.875%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(1)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(1) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Plaza urbana del centro de Cúcuta, un punto para empezar un recorrido a pie por los espacios cívicos del sector.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A2060.765625%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(1)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(1) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Santander%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A2157.765625%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(1)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(2) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Centro · Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A2000.875%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(2)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(2) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Templo catedralicio de la ciudad, ubicado en el centro. Consulta en el mapa cómo llegar y confirma las condiciones de visita.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A2060.765625%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(2)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(2) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Catedral%20San%20Jos%C3%A9%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A2157.765625%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(2)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(3) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Centro · Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A2446.765625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(3)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(3) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Edificio emblemático del centro cucuteño. Su reloj y su arquitectura hacen de esta torre una referencia reconocible del recorrido urbano.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A2506.65625%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(3)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(3) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Torre%20del%20Reloj%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A2603.65625%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(3)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(4) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A2446.765625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(4)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(4) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Casa quinta de valor arquitectónico y patrimonial. Revisa la ubicación y la información de acceso antes de planear la visita.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A2506.65625%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(4)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(4) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Quinta%20Teresa%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A2603.65625%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(4)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(5) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A2892.65625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(5)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(5) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio público de lectura y encuentro cultural. Consulta sus canales de información para conocer actividades y horarios vigentes.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A2980.046875%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(5)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(5) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Biblioteca%20P%C3%BAblica%20Julio%20P%C3%A9rez%20Ferrero%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A3077.046875%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(5)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(6) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Barrio La Playa · Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A2892.65625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(6)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(6) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio público también conocido como Parque La Victoria, contiguo a la Biblioteca Pública Julio Pérez Ferrero. Consulta su ubicación antes de iniciar el recorrido.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A2980.046875%2C%22width%22%3A278.5%2C%22height%22%3A84%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(6)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(6) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Col%C3%B3n%20Parque%20La%20Victoria%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A3095.046875%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(6)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(7) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A3384.046875%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(7)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(7) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio público identificado con el nombre de Juana Rangel de Cuéllar. Consulta el mapa para verificar su ubicación y las condiciones de visita.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A3471.4375%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(7)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(7) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Juana%20Rangel%20de%20Cu%C3%A9llar%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A3568.4375%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(7)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(8) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A3384.046875%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(8)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(8) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Punto elevado y referente visual de la ciudad. La subida y las condiciones de acceso pueden variar; verifica la ruta antes de salir.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A3443.9375%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(8)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(8) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Cristo%20Rey%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A3540.9375%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(8)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(9) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A3857.4375%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(9)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(9) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio abierto para caminar y disfrutar al aire libre. Consulta el mapa para ubicar sus accesos y revisa las condiciones locales.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A3917.328125%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(9)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(9) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Malec%C3%B3n%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A4014.328125%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(9)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(10) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A3857.4375%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(10)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(10) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Parque urbano de Cúcuta. Consulta su ubicación y las condiciones actuales del espacio antes de visitarlo.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A3917.328125%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(10)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(10) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Mercedes%20%C3%81brego%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A4014.328125%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(10)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(11) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A4303.328125%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(11)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(11) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio público al aire libre en Cúcuta. Verifica en el mapa el punto de acceso correspondiente al parque.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A4363.21875%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(11)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(11) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Nacional%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A4460.21875%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(11)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(12) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A4303.328125%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(12)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(12) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Parque urbano identificado en la ciudad. Consulta el mapa para confirmar su ubicación antes de desplazarte.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A4363.21875%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(12)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(12) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Los%20Pinos%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A4460.21875%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(12)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(13) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Barrio Popular · Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A4749.21875%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(13)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(13) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio público de barrio en Cúcuta. Consulta su ubicación y las condiciones del sector antes de visitarlo.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A4809.109375%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(13)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(13) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Barrio%20Popular%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A4906.109375%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(13)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(14) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A4749.21875%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(14)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(14) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Parque urbano identificado en Cúcuta. Revisa el mapa para ubicar el acceso y planear la visita.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A4809.109375%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(14)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(14) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Bavaria%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A4906.109375%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(14)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(15) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">San Luis · Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A5195.109375%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(15)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(15) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Parque del sector de San Luis en Cúcuta. Consulta el mapa para confirmar la ubicación exacta.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A5255%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(15)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(15) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20principal%20San%20Luis%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A5352%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(15)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(16) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A5195.109375%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(16)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(16) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio cívico abierto para hacer una pausa y recorrer el entorno urbano. Consulta su ubicación en el mapa antes de tu visita.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A5255%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(16)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(16) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Plaza%20de%20Banderas%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A5352%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(16)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(17) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A5641%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(17)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(17) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Espacio recreativo de la ciudad. Confirma con el operador o en fuentes locales si está abierto y consulta las condiciones de acceso.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A5700.890625%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(17)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(17) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20del%20Agua%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A5797.890625%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(17)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(18) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A5641%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(18)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(18) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Referente urbano identificado como Glorieta del Indio Motilón. Consulta el mapa para localizarla y planear el recorrido.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A5700.890625%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(18)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(18) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Glorieta%20Indio%20Motil%C3%B3n%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A5797.890625%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(18)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(19) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A6086.890625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(19)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(19) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Escenario deportivo de Cúcuta. La realización de eventos, el ingreso y los horarios dependen de la programación vigente.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A6146.78125%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(19)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(19) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Estadio%20General%20Santander%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A282.046875%2C%22y%22%3A6243.78125%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(19)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(20) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.19 (color de primer plano: #839087, color de fondo: #fbfaf7, tamaño de fuente: 6.8pt (9px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A6086.890625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(20)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(20) > .card-content > p:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.36 (color de primer plano: #6c7971, color de fondo: #fbfaf7, tamaño de fuente: 9.0pt (12px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<p>Centro comercial de la ciudad con una oferta de tiendas y servicios. Comprueba horarios, eventos y servicios directamente con el establecimiento.</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A6146.78125%2C%22width%22%3A278.5%2C%22height%22%3A66%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(20)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(20) > .card-content > .card-actions > .card-map[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.74 (color de primer plano: #77847b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<a class=\"card-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Ventura%20Plaza%2C%20C%C3%BAcuta%2C%20Colombia\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa <span aria-hidden=\"true\">↗</span></a>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A623.546875%2C%22y%22%3A6243.78125%2C%22width%22%3A39.453125%2C%22height%22%3A24%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "article:nth-child(20)"
+                ],
+                "source": "<article class=\"destination-card\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".section-kicker-light > span:nth-child(1)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 2.63 (color de primer plano: #a96843, color de fondo: #153f38, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>03</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A24%2C%22y%22%3A6507.78125%2C%22width%22%3A15.671875%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#mapa"
+                ],
+                "source": "<section class=\"map-section section-pad\" id=\"mapa\" aria-labelledby=\"map-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".about-copy > .section-kicker > span:nth-child(1)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 4.23 (color de primer plano: #a96843, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>04</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A287.09375%2C%22y%22%3A7121.8125%2C%22width%22%3A16.140625%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#acerca"
+                ],
+                "source": "<section class=\"about section-pad\" id=\"acerca\" aria-labelledby=\"about-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".about-copy > .section-kicker > span:nth-child(3)"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.75 (color de primer plano: #76847a, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>Sobre el proyecto</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A355.234375%2C%22y%22%3A7121.8125%2C%22width%22%3A123.5%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#acerca"
+                ],
+                "source": "<section class=\"about section-pad\" id=\"acerca\" aria-labelledby=\"about-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".about-copy > .eyebrow"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.7 (color de primer plano: #73867b, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: bold). Ratio de contraste esperado: 4.5:1",
+        "source": "<p class=\"eyebrow\">Una guía independiente</p>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A287.09375%2C%22y%22%3A7166.8125%2C%22width%22%3A394.90625%2C%22height%22%3A14%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#acerca"
+                ],
+                "source": "<section class=\"about section-pad\" id=\"acerca\" aria-labelledby=\"about-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".about-stats > div:nth-child(1) > span"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.69 (color de primer plano: #78857d, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>lugares para explorar</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A287.09375%2C%22y%22%3A7568.640625%2C%22width%22%3A121.625%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#acerca"
+                ],
+                "source": "<section class=\"about section-pad\" id=\"acerca\" aria-labelledby=\"about-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".about-stats > div:nth-child(2) > span"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.69 (color de primer plano: #78857d, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>categorías de lugares</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A423.71875%2C%22y%22%3A7568.640625%2C%22width%22%3A121.640625%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#acerca"
+                ],
+                "source": "<section class=\"about section-pad\" id=\"acerca\" aria-labelledby=\"about-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "color-contrast",
+        "description": "Garantiza que el contraste entre colores de primer plano y fondo cumple los límites de la ratio para contraste WCAG 2 AA",
+        "help": "Los elementos deben tener un contraste de colores suficiente",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=AxeChrome&lang=es",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "div:nth-child(3) > span"
+        ],
+        "summary": "Fix any of the following:\\n  El elemento tiene un contraste de color insuficiente de 3.69 (color de primer plano: #78857d, color de fondo: #fbfaf7, tamaño de fuente: 7.5pt (10px), grosor de fuente: normal). Ratio de contraste esperado: 4.5:1",
+        "source": "<span>ciudad por descubrir</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A560.359375%2C%22y%22%3A7568.640625%2C%22width%22%3A121.625%2C%22height%22%3A16%7D",
+        "relatedNodes": [
+            {
+                "selector": [
+                    "#acerca"
+                ],
+                "source": "<section class=\"about section-pad\" id=\"acerca\" aria-labelledby=\"about-title\">"
+            }
+        ]
+    },
+    {
+        "ruleId": "advanced/heading-markup",
+        "description": "Ensure each heading is marked up as a heading element or with a heading role",
+        "help": "Headings must use heading markup",
+        "helpUrl": "https://docs.deque.com/advanced-rules/1/en/advanced/heading-markup?lang=en",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(10) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  Change the element to a heading or add role=\"heading\" and aria-level (confidence: 95%)",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.semantics",
+            "wcag2aa",
+            "wcag131",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.3.1",
+            "RGAAv4",
+            "RGAA-9.1.3",
+            "advanced",
+            "non-deterministic",
+            "AI"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A384.5%2C%22y%22%3A3857.4375%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": []
+    },
+    {
+        "ruleId": "advanced/heading-markup",
+        "description": "Ensure each heading is marked up as a heading element or with a heading role",
+        "help": "Headings must use heading markup",
+        "helpUrl": "https://docs.deque.com/advanced-rules/1/en/advanced/heading-markup?lang=en",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(15) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  Change the element to a heading or add role=\"heading\" and aria-level (confidence: 92%)",
+        "source": "<p class=\"card-location\">San Luis · Cúcuta</p>",
+        "tags": [
+            "cat.semantics",
+            "wcag2aa",
+            "wcag131",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.3.1",
+            "RGAAv4",
+            "RGAA-9.1.3",
+            "advanced",
+            "non-deterministic",
+            "AI"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A5195.109375%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": []
+    },
+    {
+        "ruleId": "advanced/heading-markup",
+        "description": "Ensure each heading is marked up as a heading element or with a heading role",
+        "help": "Headings must use heading markup",
+        "helpUrl": "https://docs.deque.com/advanced-rules/1/en/advanced/heading-markup?lang=en",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            "article:nth-child(19) > .card-content > .card-location"
+        ],
+        "summary": "Fix any of the following:\\n  Change the element to a heading or add role=\"heading\" and aria-level (confidence: 95%)",
+        "source": "<p class=\"card-location\">Cúcuta</p>",
+        "tags": [
+            "cat.semantics",
+            "wcag2aa",
+            "wcag131",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.3.1",
+            "RGAAv4",
+            "RGAA-9.1.3",
+            "advanced",
+            "non-deterministic",
+            "AI"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A43%2C%22y%22%3A6086.890625%2C%22width%22%3A278.5%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": []
+    },
+    {
+        "ruleId": "advanced/text-contrast",
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Text must have sufficient color contrast",
+        "helpUrl": "https://docs.deque.com/advanced-rules/1/en/advanced/text-contrast?lang=en",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".card-image-wrap > .image-fallback[role=\"img\"]"
+        ],
+        "summary": "Fix any of the following:\\n  Element has insufficient color contrast between 3.68:1 and 4.2:1 (text color: #566a5d, background colors: #c6d1c3 / #d5ded0, font size: 18px, font weight: 400). Expected contrast ratio of 4.5:1",
+        "source": "<div class=\"image-fallback\" role=\"img\" aria-label=\"Fotografía de Plaza de Banderas no disponible en esta versión\">Fotografía no disponible en esta versión</div>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "RGAAv4",
+            "RGAA-3.2.1",
+            "ACT",
+            "advanced",
+            "non-deterministic"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A365.5%2C%22y%22%3A4971.109375%2C%22width%22%3A316.5%2C%22height%22%3A205%7D",
+        "relatedNodes": []
+    },
+    {
+        "ruleId": "advanced/text-contrast",
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Text must have sufficient color contrast",
+        "helpUrl": "https://docs.deque.com/advanced-rules/1/en/advanced/text-contrast?lang=en",
+        "impact": "serious",
+        "needsReview": false,
+        "isManual": false,
+        "selector": [
+            ".label-two"
+        ],
+        "summary": "Fix any of the following:\\n  Element has insufficient color contrast between 4.13:1 and 4.3:1 (text colors: #8ba198 / #8ca299, background colors: #153f38 / #174139, font size: 9px, font weight: 400). Expected contrast ratio of 4.5:1",
+        "source": "<span class=\"map-label label-two\">Norte de Santander</span>",
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "RGAAv4",
+            "RGAA-3.2.1",
+            "ACT",
+            "advanced",
+            "non-deterministic"
+        ],
+        "igt": "",
+        "shareURL": "",
+        "createdAt": "2026-10-17T21:16:36.765Z",
+        "testUrl": "http://localhost:8000/",
+        "testPageTitle": "Guía Turística de Cúcuta | Descubre la ciudad",
+        "foundBy": "sebastianardila1116@gmail.com",
+        "axeVersion": "4.13.0",
+        "screenshotURL": "https://axe.deque.com/api/screenshots/b9d86ecf-9423-4306-963f-76be13aa7cce?boundingBox=%7B%22x%22%3A399.171875%2C%22y%22%3A6781.671875%2C%22width%22%3A91.625%2C%22height%22%3A14.390625%7D",
+        "relatedNodes": []
+    }
+]

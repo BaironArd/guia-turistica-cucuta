@@ -439,14 +439,16 @@ dialog.addEventListener("click", (event) => {
 });
 dialog.addEventListener("close", () => lastDialogTrigger?.focus());
 
-// Observa la sección visible y sincroniza la clase y aria-current del enlace principal correspondiente.
+// Observa la sección visible y sincroniza aria-current solo cuando hay un enlace único para esa sección.
 const sectionLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
 if ("IntersectionObserver" in window) {
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
+      const matchingLinks = sectionLinks.filter((link) => link.hash === `#${entry.target.id}`);
+      const currentLink = matchingLinks.length === 1 ? matchingLinks[0] : null;
       sectionLinks.forEach((link) => {
-        const active = link.hash === `#${entry.target.id}`;
+        const active = link === currentLink;
         if (active) link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
         link.classList.toggle("is-active", active);

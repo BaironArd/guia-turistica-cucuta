@@ -12,6 +12,7 @@ Guía web informativa e independiente para explorar lugares históricos, cultura
 - Fotografías locales con créditos y licencias registrados en [`docs/fuentes-imagenes.md`](docs/fuentes-imagenes.md).
 - Diseño adaptable, estados de foco visibles y respeto por la preferencia de movimiento reducido.
 - Aviso para quienes desactiven JavaScript y respaldo visual cuando una fotografía no esté disponible o verificada.
+- Mejoras de accesibilidad en navegación, nombres accesibles, foco, contraste y legibilidad; el estado y las verificaciones pendientes se detallan en [`docs/informe-accesibilidad-cambios-2.0.md`](docs/informe-accesibilidad-cambios-2.0.md).
 - Informe funcional y técnico detallado en [`docs/informe-tecnico-guia-turistica.md`](docs/informe-tecnico-guia-turistica.md).
 
 ## Ejecutar
@@ -32,9 +33,14 @@ css/styles.css
 js/main.js
 assets/images/
 docs/fuentes-imagenes.md
+docs/auditorias/01-inicial/
+docs/auditorias/02-posterior/
+docs/informe-accesibilidad-cambios-2.0.md
 README.md
 .gitignore
 ```
+
+Las auditorías conservan los reportes originales y posteriores disponibles. Las correcciones locales de accesibilidad están documentadas por hallazgo; los ajustes de texto pequeño, roles de grupo y contraste requieren una nueva verificación automática antes de afirmar que WAVE/axe ya no los reportan. El proyecto no declara conformidad WCAG completa.
 
 ## Organización y arquitectura
 
