@@ -1,5 +1,7 @@
 // Catálogo local que alimenta las tarjetas, los filtros, los contadores y el diálogo de detalles.
 // Cada elemento aporta los datos de presentación y la consulta textual que se envía a Google Maps.
+document.documentElement.classList.remove("no-js");
+
 const places = [
   {
     id: "parque-santander",

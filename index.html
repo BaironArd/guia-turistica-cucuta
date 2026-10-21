@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
   <head>
     <!-- Metadatos del documento, recursos tipográficos y archivos propios de presentación e interacción. -->
     <meta charset="utf-8">
@@ -115,7 +115,7 @@
           <p class="result-status" id="result-status" aria-live="polite"></p>
           <div class="destination-grid" id="destination-grid"></div>
           <p class="empty-state" id="empty-state" hidden>No encontramos lugares con esos criterios. Prueba con otra búsqueda o categoría.</p>
-          <noscript><p class="empty-state">Activa JavaScript en tu navegador para explorar y filtrar los destinos de esta guía.</p></noscript>
+          <p class="empty-state js-disabled-notice">Activa JavaScript en tu navegador para explorar y filtrar los destinos de esta guía.</p>
         </div>
       </section>
 
@@ -185,7 +185,7 @@
       <div class="image-fallback dialog-image-fallback" id="dialog-image-fallback" role="img" aria-label="Fotografía no disponible" hidden>Fotografía no disponible</div>
       <div class="dialog-body">
         <p class="eyebrow" id="dialog-category"></p>
-        <h2 id="dialog-title"></h2>
+        <h2 id="dialog-title">Detalles del lugar</h2>
         <p id="dialog-description"></p>
         <a class="button button-dark" id="dialog-map-link" href="#" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps <span aria-hidden="true">↗</span></a>
       </div>
