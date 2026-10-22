@@ -7,7 +7,24 @@ Este informe registra las correcciones de accesibilidad implementadas en la Guí
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales conservadas en `docs/auditorias/01-inicial/`
-**Estado al cierre:** las correcciones de F01–F10 quedaron implementadas y verificadas en la segunda rectificación. Las auditorías finales de WAVE, axe DevTools y Lighthouse fueron ejecutadas por el usuario y reportadas como satisfactorias. Las capturas de evidencia de las unidades están incorporadas en sus apartados.
+**Periodo de implementación documentado:** 8–22 de octubre de 2026, según la cronología actualizada de `develop`.
+**Estado al cierre del 22 de octubre de 2026:** las correcciones de F01–F10 quedaron implementadas y verificadas en la segunda rectificación. Las auditorías finales de WAVE, axe DevTools y Lighthouse fueron ejecutadas por el usuario y reportadas como satisfactorias. Las capturas de evidencia de las unidades están incorporadas en sus apartados.
+
+### Cronología de implementación
+
+Las fechas siguientes corresponden a los commits de implementación y documentación en `develop`. Las fechas incluidas en «Hallazgo y origen» corresponden a las auditorías originales y se conservan como parte de su registro.
+
+| Fecha | Trabajo registrado |
+|---|---|
+| 8 de octubre | Marco referencial del programa base. |
+| 10 de octubre | Coincidencia del nombre accesible de la marca y contraste de la marca en cabecera (F01–F02). |
+| 12 de octubre | Contraste de la introducción, rutas y controles del explorador (F03–F04). |
+| 14 de octubre | Contraste de tarjetas de destinos y kicker de la sección del mapa (F05–F06). |
+| 15 de octubre | Contraste de las cifras de «La guía», del rótulo del mapa y del fallback de imagen (F07–F09). |
+| 18 de octubre | Actualización del estado y la organización de las unidades del informe. |
+| 20 de octubre | Consolidación de correcciones de accesibilidad y documentación del proyecto. |
+| 21 de octubre | Ajustes complementarios de contraste y del aviso cuando JavaScript está desactivado. |
+| 22 de octubre | Cierre del informe 2.0 e incorporación de las capturas de evidencia. |
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
