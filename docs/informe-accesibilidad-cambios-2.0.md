@@ -7,24 +7,46 @@ Este informe registra las correcciones de accesibilidad implementadas en la Guí
 **Proyecto:** Guía Turística de Cúcuta
 **Rama de trabajo:** `develop`
 **Versión base del informe:** auditorías iniciales conservadas en `docs/auditorias/01-inicial/`
-**Periodo de implementación documentado:** 8–22 de octubre de 2026, según la cronología actualizada de `develop`.
+**Periodo de implementación documentado:** 24 de septiembre–22 de octubre de 2026, según el historial completo de `develop`.
 **Estado al cierre del 22 de octubre de 2026:** las correcciones de F01–F10 quedaron implementadas y verificadas en la segunda rectificación. Las auditorías finales de WAVE, axe DevTools y Lighthouse fueron ejecutadas por el usuario y reportadas como satisfactorias. Las capturas de evidencia de las unidades están incorporadas en sus apartados.
 
-### Cronología de implementación
+### Historial completo de commits de `develop`
 
-Las fechas siguientes corresponden a los commits de implementación y documentación en `develop`. Las fechas incluidas en «Hallazgo y origen» corresponden a las auditorías originales y se conservan como parte de su registro.
+La tabla recorre todos los commits de `develop` desde la inicialización del proyecto hasta este cierre del informe. Incluye fecha, hash corto, autor y mensaje del commit. Las fechas incluidas en «Hallazgo y origen» corresponden a las auditorías originales y se conservan como parte de su registro.
 
-| Fecha | Trabajo registrado |
-|---|---|
-| 8 de octubre | Marco referencial del programa base. |
-| 10 de octubre | Coincidencia del nombre accesible de la marca y contraste de la marca en cabecera (F01–F02). |
-| 12 de octubre | Contraste de la introducción, rutas y controles del explorador (F03–F04). |
-| 14 de octubre | Contraste de tarjetas de destinos y kicker de la sección del mapa (F05–F06). |
-| 15 de octubre | Contraste de las cifras de «La guía», del rótulo del mapa y del fallback de imagen (F07–F09). |
-| 18 de octubre | Actualización del estado y la organización de las unidades del informe. |
-| 20 de octubre | Consolidación de correcciones de accesibilidad y documentación del proyecto. |
-| 21 de octubre | Ajustes complementarios de contraste y del aviso cuando JavaScript está desactivado. |
-| 22 de octubre | Cierre del informe 2.0 e incorporación de las capturas de evidencia. |
+| Fecha | Hash | Autor | Commit |
+|---|---|---|---|
+| 24 sep. 2026 | `efa7c61` | Bairon Ardila | `chore: inicializar estructura del proyecto` |
+| 26 sep. 2026 | `0b5e0c8` | Julián Andrés Parada | `feat: crear navegación y ruta histórica` |
+| 29 sep. 2026 | `21ba295` | Bairon Ardila | `style: diseñar interfaz responsive` |
+| 2 oct. 2026 | `4f05b39` | Julián Andrés Parada | `feat: incorporar ruta de naturaleza y enlaces` |
+| 5 oct. 2026 | `daf1774` | Bairon Ardila | `feat: implementar ocio, comercio e interacciones` |
+| 6 oct. 2026 | `d5e4361` | Julián Andrés Parada | `docs: documentar funcionamiento de la versión base` |
+| 6 oct. 2026 | `f59c1e2` | Bairon Ardila | `fix: pulir búsqueda y mensajes de resultados` |
+| 6 oct. 2026 | `1d33d9e` | Bairon Ardila | `fix: corregir interacciones y respaldo de destinos` |
+| 7 oct. 2026 | `1c314ad` | Julián Andrés Parada | `docs: aclarar navegación y arquitectura del sitio` |
+| 7 oct. 2026 | `4cde6f4` | Bairon Ardila | `docs: agregar informe técnico de la guía turística` |
+| 7 oct. 2026 | `3c3729a` | Bairon Ardila | `feat: ampliar catálogo a 20 lugares de Cúcuta` |
+| 7 oct. 2026 | `b6bd1f7` | Bairon Ardila | `docs: actualizar catálogo, fuentes e informe turístico` |
+| 7 oct. 2026 | `53aee01` | Julián Andrés Parada | `fix: mostrar fotos en los destinos del catálogo` |
+| 7 oct. 2026 | `8a84196` | Bairon Ardila | `docs: fijar fecha de corte del informe al 7 de octubre` |
+| 8 oct. 2026 | `bfc51ea` | Julián Andrés Parada | `docs: documentar marco referencial del programa base` |
+| 10 oct. 2026 | `77b6a15` | Julián Andrés Parada | `fix(a11y): align brand accessible names with visible text` |
+| 10 oct. 2026 | `4ae49c1` | Julián Andrés Parada | `fix(a11y): improve header brand contrast` |
+| 12 oct. 2026 | `5fed59d` | Julián Andrés Parada | `fix(a11y): improve route section contrast` |
+| 12 oct. 2026 | `ee3afbb` | Julián Andrés Parada | `fix(a11y): improve destination explorer contrast` |
+| 14 oct. 2026 | `3a6ff8f` | Julián Andrés Parada | `fix(a11y): improve destination card contrast` |
+| 14 oct. 2026 | `dedbcba` | Julián Andrés Parada | `fix(a11y): improve map section kicker contrast` |
+| 15 oct. 2026 | `809a65b` | Bairon Ardila | `fix(a11y): improve about section contrast` |
+| 15 oct. 2026 | `1b327f0` | Bairon Ardila | `fix(a11y): improve map label contrast` |
+| 15 oct. 2026 | `ac1fd2d` | Bairon Ardila | `fix(a11y): improve image fallback contrast` |
+| 18 oct. 2026 | `07b628f` | Bairon Ardila | `docs(a11y): correct unit status and plan mapping` |
+| 18 oct. 2026 | `277e2f9` | Julián Andrés Parada | `docs(a11y): clarify fallback unit history` |
+| 20 oct. 2026 | `ea83dc5` | Bairon Ardila | `fix(a11y): completar correcciones y documentacion` |
+| 21 oct. 2026 | `32de822` | Bairon Ardila | `fix(a11y): completar contraste y aviso sin JavaScript` |
+| 22 oct. 2026 | `f4aa006` | Bairon Ardila | `docs: cerrar informe de accesibilidad 2.0` |
+| 22 oct. 2026 | `c4f87f8` | Bairon Ardila | `docs: agregar capturas de accesibilidad` |
+| 22 oct. 2026 | `a889f70` | Bairon Ardila | `docs: alinear informe con cronologia de commits` |
 
 ## Unidad F01 — Coincidencia del nombre accesible de la marca
 
